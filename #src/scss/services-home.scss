@@ -1,0 +1,104 @@
+.services-home {
+  &__container {
+  }
+
+  &__title {
+    padding-bottom: 40px;
+  }
+}
+.services-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 32%;
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.services-item-diagnostics {
+  background-image: url("../img/diagnostics.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position-x: center;
+}
+.services-item-title {
+  color: #fff;
+}
+.services-item-price {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f3a845;
+  padding: 5px 0 70px;
+}
+.services-item-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.services-item-btn {
+  width: 48.6%;
+
+  &:first-child {
+    background: transparent;
+    color: #f3a845;
+
+    &:hover {
+      background: #f3a845;
+
+      .btn-text {
+        color: #0e0e0e;
+      }
+    }
+  }
+
+  &:last-child {
+    color: #0e0e0e;
+
+    &:hover {
+      .btn-text {
+        color: #f3a845;
+      }
+    }
+  }
+}
+.btn {
+}
+.btn-text {
+}
+.normal-text {
+}
+.services-item-tech-service {
+  background-image: url("../img/tech-service.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-item-electricity {
+  background-image: url("../img/electricity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-item-engin-repair {
+  background-image: url("../img/engine-repair.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-item-running-gear-repair {
+  background-image: url("../img/running-gear-repair.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-item-chip-tuning {
+  background-image: url("../img/chip-tuning.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

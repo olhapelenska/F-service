@@ -1,0 +1,22 @@
+.car-brands {
+  padding: 120px 0;
+
+  &__title {
+    padding-bottom: 40px;
+  }
+
+  &__brands {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 25px 0;
+  }
+
+  &__brand-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+  }
+}

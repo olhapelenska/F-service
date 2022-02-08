@@ -1,0 +1,16 @@
+.home-title-and-text {
+  padding: 80px 0 120px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 39%;
+  }
+
+  &__paragraph {
+    width: 49%;
+  }
+}

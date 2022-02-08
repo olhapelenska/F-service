@@ -1,0 +1,144 @@
+.news-page-main {
+  padding-top: 80px;
+  &__content {
+    width: 1030px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &__paragraps {
+  }
+
+  &__paragrap {
+    &:not(:last-child) {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__citation {
+    margin: 60px 0;
+    padding: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__citation-icon {
+    width: 24px;
+    height: 28px;
+    padding-bottom: 15px;
+  }
+
+  &__citation-text {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  &__check-points {
+    padding-bottom: 60px;
+  }
+
+  &__check-point,
+  &__number-point {
+    display: flex;
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__check-point-icon {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    padding: 3px 14px 0 0;
+  }
+
+  &__check-point-text {
+  }
+
+  &__big-image {
+  }
+
+  &__number-points {
+    padding: 60px 0;
+  }
+
+  &__number-point-icon {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f3a845;
+    padding-right: 14px;
+  }
+
+  &__number-point-text {
+  }
+
+  &__image-gallery {
+    display: grid;
+    grid-template-areas:
+      "box1 box2"
+      "box1 box3";
+    grid-gap: 20px;
+
+    @for $i from 1 to 3 {
+      div {
+        &:nth-child(#{$i}) {
+          grid-area: box + $i;
+        }
+      }
+    }
+  }
+
+  &__image-gallery-item {
+  }
+
+  &__final-paragraph {
+    padding: 60px 0 40px;
+  }
+
+  &__share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__share-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__share-messangers {
+    display: flex;
+  }
+
+  &__share-messanger {
+    width: 30px;
+    height: 30px;
+    // display: block;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    svg {
+      fill: #0e0e0e;
+    }
+
+    &:hover {
+      svg {
+        fill: #f3a845;
+      }
+    }
+  }
+}
+.container {
+}
+.normal-text {
+}

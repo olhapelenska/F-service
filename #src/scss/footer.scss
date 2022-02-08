@@ -1,0 +1,142 @@
+.footer {
+  background: #0e0e0e;
+  color: #fff;
+  padding: 60px 0;
+
+  @media (max-width: 1100px) {
+    padding: 40px 0 20px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
+  }
+
+  &__assets {
+    width: 20%;
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 1100px) {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__logo {
+    width: 182px;
+    height: 39px;
+
+    @media (max-width: 650px) {
+      width: 130px;
+      height: 27px;
+    }
+  }
+
+  &__messangers-and-copy {
+  }
+
+  &__messangers {
+    display: flex;
+    padding-bottom: 15px;
+    @media (max-width: 1100px) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__messangers-item {
+    width: 30px;
+    height: 30px;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    @media (max-width: 650px) {
+      width: 22px;
+      height: 22px;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__copy {
+    width: 100%;
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+
+  &__copy-mob {
+    width: 100%;
+    display: none;
+
+    @media (max-width: 1100px) {
+      display: block;
+      margin-top: 30px;
+    }
+  }
+
+  &__lists {
+    width: 69%;
+    max-width: 856px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__navigation {
+  }
+
+  &__title {
+    padding-bottom: 15px;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__contacts-list-item {
+    display: flex;
+  }
+
+  &__services {
+  }
+
+  &__contacts {
+    max-width: 219px;
+    @media (max-width: 650px) {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &__list-item-icon {
+    padding-top: 3px;
+    padding-right: 10px;
+  }
+
+  &__list-item-text {
+  }
+}

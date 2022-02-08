@@ -1,0 +1,73 @@
+.contact-us {
+  background-image: url("../img/contact-us-bcg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+  }
+
+  &__content {
+    padding: 100px 0 85px;
+  }
+
+  &__form {
+  }
+
+  &__form-title {
+  }
+
+  &__form-paragraph {
+    padding: 4px 0 25px;
+  }
+
+  &__form-elements {
+    width: 36%;
+    flex-wrap: wrap;
+    > * {
+      width: 47.7%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__input {
+  }
+
+  &__checkbox {
+  }
+
+  &__btn {
+    border: 1px solid #0e0e0e;
+    background: #0e0e0e;
+
+    @media (min-width: 1000px) {
+      .btn-text {
+        color: #fff;
+      }
+
+      &:hover {
+        .btn-text {
+          color: #0e0e0e;
+        }
+      }
+    }
+  }
+
+  .form-input {
+    border: 1px solid #0e0e0e;
+    color: #0e0e0e;
+
+    &::placeholder {
+      color: #0e0e0e;
+    }
+  }
+
+  .checkbox-text {
+    &::before {
+      border: 1px solid #0e0e0e;
+    }
+
+    &::after {
+      background-image: url("../img/check-black.svg");
+    }
+  }
+}

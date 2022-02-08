@@ -1,0 +1,42 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+      url("../fonts/#{$file_name}.woff") format("woff");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import "fonts";
+$fontFamily: "Montserrat", sans-serif;
+@import "common";
+@import "header";
+@import "banner-home";
+@import "footer";
+@import "contact-us";
+@import "contact-home";
+@import "services-home";
+@import "why-us";
+@import "home-title-and-text";
+@import "home-plain-text";
+@import "car-brands";
+@import "news-section";
+@import "news";
+@import "faq";
+@import "about-us";
+@import "services";
+@import "portfolio";
+@import "service-plain-text";
+@import "service-title-and-text";
+@import "tech-service-prices";
+@import "portfolio-service";
+@import "prices";
+@import "banner-news-page";
+@import "news-page-main";
+@import "contacts";
+@import "error-404";
+@import "modal-slider";
+@import "pagination";
+// @import "";

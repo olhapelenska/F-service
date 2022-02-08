@@ -1,0 +1,87 @@
+.prices {
+  padding: 50px 0 120px;
+
+  &__title {
+    padding-bottom: 40px;
+  }
+
+  &__info {
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-title {
+    width: 42%;
+  }
+
+  &__info-text {
+    width: 49%;
+  }
+
+  &__price-blocks {
+  }
+
+  &__price-block {
+    &:not(:last-child) {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__price-block-title {
+    padding-bottom: 20px;
+  }
+}
+.container {
+}
+.path {
+}
+.normal-text {
+}
+.title-h1 {
+}
+.title-h3 {
+}
+.price-items {
+}
+.price-item {
+}
+.accordion-item {
+}
+.price-item-top {
+  &.active {
+    .price-item-title {
+      &::after {
+        transform: rotate(180deg) translateY(-5px);
+      }
+    }
+  }
+}
+.accordion-title {
+}
+.price-item-title {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url("../img/arrow-down.svg");
+    transition: transform 0.3s ease;
+    top: -2px;
+    right: -20px;
+  }
+}
+.title-h4 {
+}
+.price-item-info {
+}
+.price-item-price {
+}
+.price-item-btn {
+}
+.btn {
+}
+.btn-text {
+}
+.price-item-text {
+}
+.accordion-text {
+}

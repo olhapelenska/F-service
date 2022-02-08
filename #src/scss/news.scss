@@ -1,0 +1,24 @@
+.news {
+  padding: 50px 0 120px;
+
+  @media (max-width: 650px) {
+    padding: 50px 0 80px;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+
+    @media (max-width: 650px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .news-item {
+    margin-bottom: 25px;
+  }
+}
+
+.path {
+  color: #877e7e;
+  padding-bottom: 8px;
+}

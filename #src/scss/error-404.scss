@@ -1,0 +1,63 @@
+.error-404 {
+  height: 100vh;
+  background-image: url("../img/404-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+
+  &__content {
+    height: 100vh;
+    padding: 40px 0 224px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title-404 {
+    font-weight: 600;
+    font-size: 144px;
+    line-height: 150px;
+  }
+
+  &__title-error {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    padding: 15px 0;
+  }
+
+  &__message {
+    padding-bottom: 20px;
+  }
+
+  &__messangers {
+  }
+
+  &__messanger {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

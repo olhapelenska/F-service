@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('_head.html',{ "title":"F-service", })
+  <body>
+    <div class="wrapper">
+      @@include('_header.html')
+      <main class="page">
+        @@include('_banner-home.html') @@include('_contact-home.html')
+        @@include('_services-home.html') @@include('_home-title-and-text.html')
+        @@include('_contact-us.html') @@include('_home-plain-text.html')
+        @@include('_why-us.html') @@include('_car-brands.html')
+        @@include('_faq.html') @@include('_news-home.html')
+        @@include('_map.html') @@include('_modal-form.html')
+      </main>
+      @@include('_footer.html')
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.min.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKxjvTCBgHlQmhi7vo4ywPbkyJQh6B59M&callback=initMap"
+    ></script>
+  </body>
+</html>

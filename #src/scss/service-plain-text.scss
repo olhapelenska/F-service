@@ -1,0 +1,11 @@
+.service-plain-text {
+  padding: 80px 0 120px;
+  &__content {
+  }
+
+  &__paragraph {
+    &:not(:last-child) {
+      padding-bottom: 15px;
+    }
+  }
+}

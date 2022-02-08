@@ -1,0 +1,84 @@
+.why-us {
+  &__container {
+  }
+
+  &__top-text {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    width: 39%;
+  }
+
+  &__paragraph {
+    width: 49%;
+  }
+
+  &__items {
+    display: flex;
+    color: #fff;
+  }
+
+  &__item {
+    width: 25%;
+    padding: 50px 25px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-icon {
+    align-self: center;
+    width: 154px;
+    height: 154px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(243, 168, 69, 0.7);
+    border-radius: 50%;
+
+    svg {
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  &__item-title {
+    padding: 32px 0 10px;
+  }
+
+  &__item-paragraph {
+  }
+
+  &__item-warranty {
+    background-image: url("../img/warranty.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__item-equipment {
+    background-image: url("../img/equipment.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__item-specialists {
+    background-image: url("../img/specialists.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__item-spare-parts {
+    background-image: url("../img/spare-parts.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.title-h2 {
+}
+.normal-text {
+}
+.title-h3 {
+}

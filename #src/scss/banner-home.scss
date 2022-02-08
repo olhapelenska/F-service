@@ -1,0 +1,138 @@
+.banner {
+  position: relative;
+  color: #fff;
+
+  &__slider {
+  }
+
+  &__phone {
+    position: absolute;
+    bottom: 30px;
+    right: 7%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .slick-dots {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+  }
+  .slick-dots li {
+  }
+
+  .slick-dots li.slick-active {
+  }
+
+  .slick-dots li button {
+    font-size: 0;
+    height: 6px;
+    width: 6px;
+    background: #e2e2e2;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .slick-dots li.slick-active button {
+    background: #f3a845;
+  }
+}
+
+.banner-home {
+  &__slide1 {
+    background-image: url("../img/banner-home-bcg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  &__slide1-container {
+    padding: 80px 0;
+  }
+
+  &__slide1-content {
+    margin-left: 130px;
+  }
+
+  &__slide1-title {
+    padding-bottom: 20px;
+  }
+
+  &__slide1-paragraph {
+    width: 400px;
+  }
+}
+
+.banner-about-us,
+.banner-tech-service {
+  &__slide1 {
+    background-image: url("../img/about-us-bcg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  &__slide1-container {
+    padding: 80px 0 117px;
+  }
+
+  &__slide1-content {
+    margin-left: 130px;
+  }
+
+  &__slide1-title {
+    padding-bottom: 15px;
+  }
+
+  &__slide1-paragraph {
+    width: 400px;
+  }
+}
+
+.slick-slider {
+}
+
+.slick-slider.slick-initialized {
+}
+
+.slick-slider.slick-dotted {
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: block;
+}
+
+.slick-slide {
+}
+
+.slick-slide.slick-active {
+}
+
+.slick-slide.slick-current {
+}
+
+.slick-slide.slick-center {
+}
+
+.slick-slide.slick-cloned {
+}
+
+.slick-arrow {
+}
+
+.slick-arrow.slick-prev {
+}
+
+.slick-arrow.slick-next {
+}
+
+.slick-arrow.slick-disabled {
+}

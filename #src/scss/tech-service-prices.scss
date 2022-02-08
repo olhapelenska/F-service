@@ -1,0 +1,52 @@
+.tech-service-prices {
+  &__title {
+    padding-bottom: 40px;
+  }
+}
+
+.price-item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.price-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-item-title {
+}
+
+.price-item-info {
+  display: flex;
+  align-items: center;
+}
+.price-item-price {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  padding-right: 50px;
+  color: #f3a845;
+}
+.price-item-btn {
+  background: transparent;
+
+  .btn-text {
+    color: #f3a845;
+  }
+
+  @media (min-width: 1000px) {
+    &:hover {
+      background: #f3a845;
+
+      .btn-text {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.price-item-text {
+}

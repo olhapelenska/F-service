@@ -1,0 +1,66 @@
+.about-us {
+  padding: 120px 0;
+
+  &__items {
+  }
+
+  &__item {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item-title-wrapper {
+    display: flex;
+    align-items: center;
+    width: 29.5%;
+  }
+
+  &__item-title-icon {
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    padding-right: 20px;
+  }
+
+  &__item-title {
+  }
+
+  &__item-text {
+    width: 66.6%;
+  }
+
+  &__item-paragraph {
+    padding-bottom: 15px;
+  }
+
+  &__item-check-points {
+    display: flex;
+    padding-top: 10px;
+  }
+
+  &__item-check-point {
+    display: flex;
+    width: 48.7%;
+  }
+
+  &__item-check-point-icon {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    padding-right: 10px;
+  }
+
+  &__item-check-point-text {
+  }
+}
