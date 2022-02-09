@@ -55,44 +55,55 @@
   line-height: 28px;
   color: #f3a845;
   padding: 5px 0 70px;
+
+  @media (max-width: 650px) {
+    padding: 2px 0 36px;
+  }
 }
+
 .services-item-buttons {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .services-item-btn {
   width: 48.6%;
 
   &:first-child {
     background: transparent;
     color: #f3a845;
-
-    &:hover {
-      background: #f3a845;
-
-      .btn-text {
-        color: #0e0e0e;
-      }
-    }
   }
 
   &:last-child {
     color: #0e0e0e;
+  }
+}
 
-    &:hover {
-      .btn-text {
-        color: #f3a845;
+body {
+  &.mouse {
+    .services-item-btn {
+      &:first-child {
+        &:hover {
+          background: #f3a845;
+
+          .btn-text {
+            color: #0e0e0e;
+          }
+        }
+      }
+
+      &:last-child {
+        &:hover {
+          .btn-text {
+            color: #f3a845;
+          }
+        }
       }
     }
   }
 }
-.btn {
-}
-.btn-text {
-}
-.normal-text {
-}
+
 .services-item-tech-service {
   background-image: url("../img/tech-service.jpg");
   background-repeat: no-repeat;

@@ -1,12 +1,28 @@
 .portfolio {
   padding: 50px 0 120px;
 
+  @media (max-width: 650px) {
+    padding: 50px 0 80px;
+  }
+
   &__title {
     padding-bottom: 40px;
+
+    @media (max-width: 650px) {
+      padding-bottom: 30px;
+    }
   }
 
   .portfolio-item {
     margin-bottom: 30px;
+  }
+
+  .portfolio-items {
+    margin-bottom: 10px;
+
+    @media (max-width: 650px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -20,6 +36,14 @@
 .portfolio-item {
   width: 32%;
   cursor: pointer;
+
+  @media (max-width: 1100px) {
+    width: 48.7%;
+  }
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
 }
 
 .portfolio-item-img {
@@ -40,6 +64,10 @@
 
 .portfolio-item-title {
   padding: 20px 0 10px;
+
+  @media (max-width: 650px) {
+    padding: 15px 0 10px;
+  }
 }
 
 body {

@@ -137,6 +137,11 @@ textarea {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+
+  @media (max-width: 650px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .normal-text,
@@ -166,17 +171,21 @@ textarea {
   border: 1px solid #f3a845;
   transition: 0.2s;
 
-  @media (min-width: 1000px) {
-    &:hover {
-      background: transparent;
+  .btn-text {
+    font-weight: 600;
+  }
+}
 
-      .btn-text {
-        color: #fff;
+body {
+  &.mouse {
+    .btn {
+      &:hover {
+        background: transparent;
+
+        .btn-text {
+          color: #fff;
+        }
       }
-    }
-
-    .btn-text {
-      font-weight: 600;
     }
   }
 }

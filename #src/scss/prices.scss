@@ -1,22 +1,47 @@
 .prices {
   padding: 50px 0 120px;
 
+  @media (max-width: 650px) {
+    padding: 50px 0 80px;
+  }
+
   &__title {
     padding-bottom: 40px;
+    @media (max-width: 650px) {
+      padding-bottom: 15px;
+    }
   }
 
   &__info {
     padding-bottom: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__info-title {
     width: 42%;
+
+    @media (max-width: 1100px) {
+      width: 80%;
+      padding-bottom: 15px;
+    }
+
+    @media (max-width: 850px) {
+      width: 100%;
+    }
   }
 
   &__info-text {
     width: 49%;
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
   }
 
   &__price-blocks {
@@ -30,24 +55,12 @@
 
   &__price-block-title {
     padding-bottom: 20px;
+    @media (max-width: 650px) {
+      padding-bottom: 15px;
+    }
   }
 }
-.container {
-}
-.path {
-}
-.normal-text {
-}
-.title-h1 {
-}
-.title-h3 {
-}
-.price-items {
-}
-.price-item {
-}
-.accordion-item {
-}
+
 .price-item-top {
   &.active {
     .price-item-title {
@@ -57,8 +70,7 @@
     }
   }
 }
-.accordion-title {
-}
+
 .price-item-title {
   position: relative;
   &::after {
@@ -67,21 +79,9 @@
     transition: transform 0.3s ease;
     top: -2px;
     right: -20px;
+
+    @media (max-width: 650px) {
+      right: 0;
+    }
   }
-}
-.title-h4 {
-}
-.price-item-info {
-}
-.price-item-price {
-}
-.price-item-btn {
-}
-.btn {
-}
-.btn-text {
-}
-.price-item-text {
-}
-.accordion-text {
 }

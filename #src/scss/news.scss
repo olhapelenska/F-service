@@ -16,6 +16,14 @@
   .news-item {
     margin-bottom: 25px;
   }
+
+  .news-items {
+    margin-bottom: 15px;
+
+    @media (max-width: 650px) {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .path {
