@@ -1,9 +1,10 @@
 .services-home {
-  &__container {
-  }
-
   &__title {
     padding-bottom: 40px;
+
+    @media (max-width: 650px) {
+      padding-bottom: 20px;
+    }
   }
 }
 .services-items {
@@ -21,6 +22,16 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+
+  @media (max-width: 1100px) {
+    width: 48.7%;
+  }
+
+  @media (max-width: 650px) {
+    width: 100%;
+    padding: 55px 10px 10px;
+    margin-bottom: 22px;
+  }
 }
 .services-item-diagnostics {
   background-image: url("../img/diagnostics.jpg");
@@ -32,6 +43,11 @@
 }
 .services-item-title {
   color: #fff;
+
+  @media (max-width: 850px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .services-item-price {
   font-weight: 600;

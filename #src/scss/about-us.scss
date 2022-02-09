@@ -1,6 +1,10 @@
 .about-us {
   padding: 120px 0;
 
+  @media (max-width: 650px) {
+    padding: 80px 0;
+  }
+
   &__items {
   }
 
@@ -14,21 +18,42 @@
     &:not(:last-child) {
       margin-bottom: 12px;
     }
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      padding: 15px;
+    }
   }
 
   &__item-title-wrapper {
     display: flex;
     align-items: center;
     width: 29.5%;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      padding-bottom: 15px;
+    }
   }
 
   &__item-title-icon {
+    display: flex;
+    justify-content: center;
     svg {
       width: 40px;
       height: 40px;
+
+      @media (max-width: 650px) {
+        width: 20px;
+        height: 20px;
+      }
     }
 
     padding-right: 20px;
+
+    @media (max-width: 650px) {
+      padding-right: 8px;
+    }
   }
 
   &__item-title {
@@ -36,6 +61,10 @@
 
   &__item-text {
     width: 66.6%;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
   }
 
   &__item-paragraph {
@@ -45,11 +74,30 @@
   &__item-check-points {
     display: flex;
     padding-top: 10px;
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+      padding-top: 0;
+    }
   }
 
   &__item-check-point {
     display: flex;
     width: 48.7%;
+
+    @media (max-width: 1100px) {
+      &:first-child {
+        padding-right: 20px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
+      flex-direction: column;
+      &:first-child {
+        padding: 0 0 15px 0;
+      }
+    }
   }
 
   &__item-check-point-icon {
@@ -59,6 +107,10 @@
     }
 
     padding-right: 10px;
+
+    @media (max-width: 650px) {
+      padding-bottom: 8px;
+    }
   }
 
   &__item-check-point-text {

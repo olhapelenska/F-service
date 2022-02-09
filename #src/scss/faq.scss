@@ -1,9 +1,10 @@
 .faq {
-  &__container {
-  }
-
   &__title {
     padding-bottom: 40px;
+
+    @media (max-width: 650px) {
+      padding-bottom: 15px;
+    }
   }
 
   &__questions {
@@ -17,6 +18,11 @@
     width: 47.9%;
     padding: 12px 20px;
     margin-bottom: 10px;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      padding: 12px 15px;
+    }
   }
 
   &__question-title {
@@ -50,6 +56,10 @@
 .accordion-item {
   padding: 12px 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+
+  @media (max-width: 1100px) {
+    padding: 12px 15px;
+  }
 }
 
 .accordion-title {

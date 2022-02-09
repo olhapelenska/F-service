@@ -40,6 +40,23 @@
   .slick-dots li.slick-active button {
     background: #f3a845;
   }
+
+  &__messangers {
+    display: none;
+
+    @media (max-width: 650px) {
+      display: flex;
+      padding-top: 48px;
+    }
+  }
+
+  &__messanger {
+    width: 20px;
+    height: 20px;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
 }
 
 .banner-home {
@@ -48,22 +65,42 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+
+    @media (max-width: 425px) {
+      background-image: url("../img/banner-home-bg-mob.png");
+    }
   }
 
   &__slide1-container {
     padding: 80px 0;
+
+    @media (max-width: 650px) {
+      padding: 50px 0 88px;
+    }
   }
 
   &__slide1-content {
     margin-left: 130px;
+
+    @media (max-width: 1100px) {
+      margin-left: 0;
+    }
   }
 
   &__slide1-title {
     padding-bottom: 20px;
+
+    @media (max-width: 650px) {
+      padding-bottom: 12px;
+    }
   }
 
   &__slide1-paragraph {
     width: 400px;
+
+    @media (max-width: 650px) {
+      max-width: 244px;
+    }
   }
 }
 
@@ -74,14 +111,25 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+
+    @media (max-width: 425px) {
+      background-image: url("../img/about-us-bg-mob.jpg");
+    }
   }
 
   &__slide1-container {
     padding: 80px 0 117px;
+
+    @media (max-width: 650px) {
+      padding: 50px 0 20px;
+    }
   }
 
   &__slide1-content {
     margin-left: 130px;
+    @media (max-width: 1100px) {
+      margin-left: 0;
+    }
   }
 
   &__slide1-title {
@@ -90,6 +138,10 @@
 
   &__slide1-paragraph {
     width: 400px;
+
+    @media (max-width: 650px) {
+      width: 244px;
+    }
   }
 }
 

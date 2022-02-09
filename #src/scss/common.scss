@@ -185,6 +185,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .form-input,
@@ -292,6 +293,11 @@ textarea {
   transition: 0.4s ease-in-out;
   z-index: 9999;
   max-height: 100vh;
+  max-width: 86vw;
+
+  @media (max-width: 650px) {
+    max-width: 87.5vw;
+  }
 
   &__close-btn {
     position: absolute;

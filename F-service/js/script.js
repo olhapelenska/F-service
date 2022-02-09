@@ -80,53 +80,31 @@ $(document).ready(function () {
       arrows: false,
       dots: true,
       vertical: true,
-      // adaptiveHeight: true,
+      adaptiveHeight: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       speed: 1000,
       easing: "ease",
       infinite: true,
-      // initialSlide: 0,
+      initialSlide: 0,
       autoplay: true,
       autoplaySpeed: 3000,
       touchThreshold: 10,
-      // waitForAnimate: false,
-      centerMode: false,
-      variableWidth: false,
-      // fade: true,
-      responsive: [
-        {
-          breakpoint: 650,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
     });
   }
 
   if ($(".portfolio-slider").length) {
     $(".portfolio-slider").slick({
       arrows: true,
-      dots: false,
-      // adaptiveHeight: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       speed: 1000,
       easing: "ease",
       infinite: true,
-      // initialSlide: 0,
-      // autoplay: true,
-      autoplaySpeed: 3000,
-      // touchThreshold: 10,
-      // waitForAnimate: false,
-      centerMode: false,
       appendArrows: $(".arrows"),
-      variableWidth: false,
       responsive: [
         {
-          breakpoint: 1000,
+          breakpoint: 1100,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -145,31 +123,19 @@ $(document).ready(function () {
 
   if ($(".modal-slider-main").length) {
     $(".modal-slider-main").slick({
-      arrows: true,
-      speed: 1000,
-      easing: "ease",
-      infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: true,
-      asNavFor: ".slider-nav",
-      touchThreshold: 10,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      asNavFor: ".modal-slider-nav",
     });
   }
 
   if ($(".modal-slider-nav").length) {
     $(".modal-slider-nav").slick({
       slidesToShow: 6,
-      slidesToScroll: 1,
-      speed: 1000,
-      asNavFor: ".slider-for",
       arrows: false,
+      slidesToScroll: 1,
+      asNavFor: ".modal-slider-main",
       focusOnSelect: true,
-      touchThreshold: 10,
-      autoplay: true,
-      autoplaySpeed: 3000,
     });
   }
 });
