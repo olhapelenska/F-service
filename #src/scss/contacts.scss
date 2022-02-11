@@ -27,12 +27,19 @@
     padding-bottom: 30px;
   }
 
+  &__contact-items {
+  }
+
   &__adress-item {
     display: flex;
+    // align-items: center;
   }
 
   &__adress-icon {
-    margin: 3px 6px 0 0;
+    margin: 3px 6px 0;
+  }
+
+  &__adress {
   }
 
   &__phones {
@@ -52,6 +59,9 @@
     margin-right: 5px;
   }
 
+  &__phone {
+  }
+
   &__mail-item {
     display: flex;
     align-items: center;
@@ -59,6 +69,9 @@
 
   &__mail-icon {
     margin-right: 4px;
+  }
+
+  &__mail {
   }
 
   &__form {
@@ -86,6 +99,9 @@
     &::placeholder {
       color: #fff;
     }
+  }
+
+  &__form-title {
   }
 
   &__form-paragraph {

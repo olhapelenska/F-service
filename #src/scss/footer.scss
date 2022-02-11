@@ -42,6 +42,9 @@
     }
   }
 
+  &__messangers-and-copy {
+  }
+
   &__messangers {
     display: flex;
     padding-bottom: 15px;
@@ -101,8 +104,14 @@
     }
   }
 
+  &__navigation {
+  }
+
   &__title {
     padding-bottom: 15px;
+  }
+
+  &__list {
   }
 
   &__list-item {
@@ -116,6 +125,9 @@
       display: flex;
     }
     display: flex;
+  }
+
+  &__services {
   }
 
   &__contacts {
@@ -134,6 +146,9 @@
     svg {
       fill: #fff;
     }
+  }
+
+  &__list-item-text {
   }
 }
 

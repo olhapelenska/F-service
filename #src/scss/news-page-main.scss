@@ -85,6 +85,12 @@
     }
   }
 
+  &__check-point-text {
+  }
+
+  &__big-image {
+  }
+
   &__number-points {
     padding: 60px 0;
 
@@ -93,18 +99,49 @@
     }
   }
 
-  &__number-point-icon {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 26px;
-    color: #f3a845;
-    padding-right: 14px;
+  &__number-point {
+    padding-left: 35px;
+    position: relative;
 
     @media (max-width: 650px) {
-      padding-right: 11px;
-      font-size: 14px;
-      line-height: 24px;
+      padding-left: 30px;
     }
+
+    &::before {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      color: #f3a845;
+    }
+
+    &:nth-child(1) {
+      &::before {
+        content: "01.";
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        content: "02.";
+      }
+    }
+    &:nth-child(3) {
+      &::before {
+        content: "03.";
+      }
+    }
+    &:nth-child(4) {
+      &::before {
+        content: "04.";
+      }
+    }
+  }
+
+  &__number-point-text {
   }
 
   &__image-gallery {
@@ -129,6 +166,9 @@
         "box3";
       grid-gap: 10px;
     }
+  }
+
+  &__image-gallery-item {
   }
 
   &__final-paragraph {
