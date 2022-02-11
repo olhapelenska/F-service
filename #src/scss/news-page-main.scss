@@ -1,5 +1,10 @@
 .news-page-main {
   padding-top: 80px;
+
+  @media (max-width: 650px) {
+    padding-top: 50px;
+  }
+
   &__content {
     width: 1030px;
     max-width: 100%;
@@ -7,11 +12,10 @@
   }
 
   &__paragraps {
-  }
-
-  &__paragrap {
-    &:not(:last-child) {
-      padding-bottom: 15px;
+    p {
+      &:not(:last-child) {
+        padding-bottom: 15px;
+      }
     }
   }
 
@@ -22,6 +26,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 650px) {
+      margin: 50px 0;
+      padding: 30px 15px;
+    }
   }
 
   &__citation-icon {
@@ -34,10 +43,19 @@
     font-size: 24px;
     line-height: 36px;
     text-align: center;
+
+    @media (max-width: 650px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__check-points {
     padding-bottom: 60px;
+
+    @media (max-width: 650px) {
+      padding-bottom: 50px;
+    }
   }
 
   &__check-point,
@@ -49,34 +67,44 @@
     }
   }
 
-  &__check-point-icon {
-    svg {
-      width: 20px;
-      height: 20px;
+  &__check-point {
+    padding-left: 35px;
+    position: relative;
+
+    @media (max-width: 650px) {
+      padding-left: 30px;
     }
 
-    padding: 3px 14px 0 0;
-  }
-
-  &__check-point-text {
-  }
-
-  &__big-image {
+    &::before {
+      position: absolute;
+      content: url("../img/tick.svg");
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 4px;
+    }
   }
 
   &__number-points {
     padding: 60px 0;
+
+    @media (max-width: 650px) {
+      padding: 50px 0;
+    }
   }
 
   &__number-point-icon {
     font-weight: 600;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 26px;
     color: #f3a845;
     padding-right: 14px;
-  }
 
-  &__number-point-text {
+    @media (max-width: 650px) {
+      padding-right: 11px;
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   &__image-gallery {
@@ -86,20 +114,29 @@
       "box1 box3";
     grid-gap: 20px;
 
-    @for $i from 1 to 3 {
+    @for $i from 1 to 10 {
       div {
         &:nth-child(#{$i}) {
           grid-area: box + $i;
         }
       }
     }
-  }
 
-  &__image-gallery-item {
+    @media (max-width: 650px) {
+      grid-template-areas:
+        "box1"
+        "box2"
+        "box3";
+      grid-gap: 10px;
+    }
   }
 
   &__final-paragraph {
     padding: 60px 0 40px;
+
+    @media (max-width: 650px) {
+      padding: 50px 0 30px;
+    }
   }
 
   &__share {
@@ -112,6 +149,11 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
+
+    @media (max-width: 650px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__share-messangers {
@@ -121,7 +163,6 @@
   &__share-messanger {
     width: 30px;
     height: 30px;
-    // display: block;
 
     &:not(:last-child) {
       margin-right: 20px;
@@ -131,14 +172,23 @@
       fill: #0e0e0e;
     }
 
-    &:hover {
-      svg {
-        fill: #f3a845;
-      }
+    @media (max-width: 650px) {
+      width: 25px;
+      height: 25px;
     }
   }
 }
-.container {
-}
-.normal-text {
+
+body {
+  &.mouse {
+    .news-page-main {
+      &__share-messanger {
+        &:hover {
+          svg {
+            fill: #f3a845;
+          }
+        }
+      }
+    }
+  }
 }

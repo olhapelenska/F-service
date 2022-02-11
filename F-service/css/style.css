@@ -188,6 +188,12 @@ textarea {
   line-height: 22px;
 }
 
+.wp-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
 .link {
   font-weight: 600;
   font-size: 14px;
@@ -215,6 +221,7 @@ textarea {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .btn .btn-text {
@@ -418,7 +425,7 @@ body.mouse .btn:hover .btn-text {
 .header__address-icon {
   width: 12px;
   height: 15px;
-  margin-right: 6px;
+  margin: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,14 +456,7 @@ body.mouse .btn:hover .btn-text {
 }
 
 .header__telephone-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 12px;
-  line-height: 16px;
+  display: none;
 }
 
 .header__telephone-top-icon {
@@ -629,24 +629,28 @@ body.mouse .btn:hover .btn-text {
 }
 
 .header__address-mob-icon {
-  padding-right: 8px;
+  margin: 3px 8px 0 0;
 }
 
 .header__worktime-mob-icon {
-  padding-right: 7px;
+  margin: 3px 7px 0 0;
 }
 
 .header__telephone-mob-icon {
-  padding-right: 7px;
+  margin: 3px 7px 0 0;
 }
 
 .header__mail-mob-icon {
-  padding-right: 6px;
+  margin: 3px 6px 0 0;
 }
 
 .header__telephone-icon {
   width: 14px;
   height: 14px;
+}
+
+.header__telephone-icon svg {
+  fill: #fff;
 }
 
 .header__messangers {
@@ -691,6 +695,14 @@ body.mouse .header__sub-list-link:hover {
 }
 
 body.mouse .header__messanger-item:hover {
+  fill: #f3a845;
+}
+
+body.mouse .header__telephone:hover {
+  color: #f3a845;
+}
+
+body.mouse .header__telephone:hover svg {
   fill: #f3a845;
 }
 
@@ -769,13 +781,10 @@ body.touch .header__list-arrow-mob.active svg {
   margin-right: 15px;
 }
 
-._no-webp .banner-home__slide1 {
-  background-image: url("../img/banner-home-bcg.png"); }
-
 .banner-home__slide1 {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center;
 }
 
 .banner-home__slide1-container {
@@ -794,14 +803,11 @@ body.touch .header__list-arrow-mob.active svg {
   width: 400px;
 }
 
-._no-webp .banner-about-us__slide1, ._no-webp .banner-tech-service__slide1 {
-  background-image: url("../img/about-us-bcg.jpg"); }
-
 .banner-about-us__slide1,
 .banner-tech-service__slide1 {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center;
 }
 
 .banner-about-us__slide1-container,
@@ -822,14 +828,6 @@ body.touch .header__list-arrow-mob.active svg {
 .banner-about-us__slide1-paragraph,
 .banner-tech-service__slide1-paragraph {
   width: 400px;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-track {
-  display: block;
 }
 
 .footer {
@@ -883,6 +881,10 @@ body.touch .header__list-arrow-mob.active svg {
   margin-right: 25px;
 }
 
+.footer__messangers-item svg {
+  fill: #f3a845;
+}
+
 .footer__copy {
   width: 100%;
 }
@@ -917,6 +919,12 @@ body.touch .header__list-arrow-mob.active svg {
   display: flex;
 }
 
+.footer__contacts-list-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__contacts {
   max-width: 219px;
 }
@@ -926,12 +934,33 @@ body.touch .header__list-arrow-mob.active svg {
   padding-right: 10px;
 }
 
-._no-webp .contact-us {
-  background-image: url("../img/contact-us-bcg.jpg"); }
+.footer__list-item-icon svg {
+  fill: #fff;
+}
+
+body.mouse .footer__navigation .footer__list-item:hover,
+body.mouse .footer__services .footer__list-item:hover {
+  color: #f3a845;
+}
+
+body.mouse .footer__contacts .footer__contacts-list-item-tel:hover,
+body.mouse .footer__contacts .footer__contacts-list-item-mail:hover {
+  color: #f3a845;
+}
+
+body.mouse .footer__contacts .footer__contacts-list-item-tel:hover svg,
+body.mouse .footer__contacts .footer__contacts-list-item-mail:hover svg {
+  fill: #f3a845;
+}
+
+body.mouse .footer__messangers-item:hover svg {
+  fill: #fff;
+}
 
 .contact-us {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .contact-us__content {
@@ -1087,9 +1116,6 @@ body.mouse .contact-us__btn:hover .btn-text {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1111,18 +1137,13 @@ body.mouse .contact-us__btn:hover .btn-text {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40px;
-}
-
-._no-webp .services-item-diagnostics {
-  background-image: url("../img/diagnostics.jpg"); }
-
-.services-item-diagnostics {
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .services-item-title {
   color: #fff;
+  text-align: center;
 }
 
 .services-item-price {
@@ -1141,6 +1162,7 @@ body.mouse .contact-us__btn:hover .btn-text {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: auto;
 }
 
 .services-item-btn {
@@ -1166,46 +1188,6 @@ body.mouse .services-item-btn:first-child:hover .btn-text {
 
 body.mouse .services-item-btn:last-child:hover .btn-text {
   color: #f3a845;
-}
-
-._no-webp .services-item-tech-service {
-  background-image: url("../img/tech-service.jpg"); }
-
-.services-item-tech-service {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-._no-webp .services-item-electricity {
-  background-image: url("../img/electricity.jpg"); }
-
-.services-item-electricity {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-._no-webp .services-item-engin-repair {
-  background-image: url("../img/engine-repair.png"); }
-
-.services-item-engin-repair {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-._no-webp .services-item-running-gear-repair {
-  background-image: url("../img/running-gear-repair.jpg"); }
-
-.services-item-running-gear-repair {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-._no-webp .services-item-chip-tuning {
-  background-image: url("../img/chip-tuning.jpg"); }
-
-.services-item-chip-tuning {
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .why-us__top-text {
@@ -1248,6 +1230,8 @@ body.mouse .services-item-btn:last-child:hover .btn-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .why-us__item-icon {
@@ -1275,38 +1259,6 @@ body.mouse .services-item-btn:last-child:hover .btn-text {
 
 .why-us__item-title {
   padding: 32px 0 10px;
-}
-
-._no-webp .why-us__item-warranty {
-  background-image: url("../img/warranty.jpg"); }
-
-.why-us__item-warranty {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-._no-webp .why-us__item-equipment {
-  background-image: url("../img/equipment.jpg"); }
-
-.why-us__item-equipment {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-._no-webp .why-us__item-specialists {
-  background-image: url("../img/specialists.jpg"); }
-
-.why-us__item-specialists {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-._no-webp .why-us__item-spare-parts {
-  background-image: url("../img/spare-parts.jpg"); }
-
-.why-us__item-spare-parts {
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .home-title-and-text {
@@ -1535,6 +1487,10 @@ body.mouse .news-item:hover .news-item-img::before {
           transform: rotate(360deg);
 }
 
+.tech-service .faq {
+  padding-bottom: 120px;
+}
+
 .accordion-item {
   padding: 12px 20px;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
@@ -1602,7 +1558,7 @@ body.mouse .news-item:hover .news-item-img::before {
   width: 66.6%;
 }
 
-.about-us__item-paragraph {
+.about-us__item-paragraphs p {
   padding-bottom: 15px;
 }
 
@@ -1618,6 +1574,21 @@ body.mouse .news-item:hover .news-item-img::before {
   display: -ms-flexbox;
   display: flex;
   width: 48.7%;
+  padding-left: 30px;
+  position: relative;
+}
+
+.about-us__item-check-point::before {
+  position: absolute;
+  content: url("../img/tick.svg");
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 4px;
+}
+
+.about-us__item-check-point:first-child {
+  padding-right: 20px;
 }
 
 .about-us__item-check-point-icon {
@@ -1800,6 +1771,11 @@ body.mouse .price-item-btn:hover .btn-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 50px;
+}
+
+.portfolio-service .arrows-mob {
+  display: none;
 }
 
 .portfolio-service .slick-arrow {
@@ -1891,12 +1867,10 @@ body.mouse .price-item-btn:hover .btn-text {
   right: -20px;
 }
 
-._no-webp .banner-news-page {
-  background-image: url("../img/news-page-bcg.jpg"); }
-
 .banner-news-page {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .banner-news-page__content {
@@ -1929,7 +1903,7 @@ body.mouse .price-item-btn:hover .btn-text {
   margin: 0 auto;
 }
 
-.news-page-main__paragrap:not(:last-child) {
+.news-page-main__paragraps p:not(:last-child) {
   padding-bottom: 15px;
 }
 
@@ -1978,13 +1952,18 @@ body.mouse .price-item-btn:hover .btn-text {
   padding-bottom: 20px;
 }
 
-.news-page-main__check-point-icon {
-  padding: 3px 14px 0 0;
+.news-page-main__check-point {
+  padding-left: 35px;
+  position: relative;
 }
 
-.news-page-main__check-point-icon svg {
+.news-page-main__check-point::before {
+  position: absolute;
+  content: url("../img/tick.svg");
   width: 20px;
   height: 20px;
+  left: 0;
+  top: 4px;
 }
 
 .news-page-main__number-points {
@@ -1994,7 +1973,7 @@ body.mouse .price-item-btn:hover .btn-text {
 .news-page-main__number-point-icon {
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   color: #f3a845;
   padding-right: 14px;
 }
@@ -2011,6 +1990,34 @@ body.mouse .price-item-btn:hover .btn-text {
 
 .news-page-main__image-gallery div:nth-child(2) {
   grid-area: box2;
+}
+
+.news-page-main__image-gallery div:nth-child(3) {
+  grid-area: box3;
+}
+
+.news-page-main__image-gallery div:nth-child(4) {
+  grid-area: box4;
+}
+
+.news-page-main__image-gallery div:nth-child(5) {
+  grid-area: box5;
+}
+
+.news-page-main__image-gallery div:nth-child(6) {
+  grid-area: box6;
+}
+
+.news-page-main__image-gallery div:nth-child(7) {
+  grid-area: box7;
+}
+
+.news-page-main__image-gallery div:nth-child(8) {
+  grid-area: box8;
+}
+
+.news-page-main__image-gallery div:nth-child(9) {
+  grid-area: box9;
 }
 
 .news-page-main__final-paragraph {
@@ -2054,7 +2061,7 @@ body.mouse .price-item-btn:hover .btn-text {
   fill: #0e0e0e;
 }
 
-.news-page-main__share-messanger:hover svg {
+body.mouse .news-page-main__share-messanger:hover svg {
   fill: #f3a845;
 }
 
@@ -2086,13 +2093,10 @@ body.mouse .price-item-btn:hover .btn-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contacts__adress-icon {
-  margin-right: 6px;
+  margin: 3px 6px 0 0;
 }
 
 .contacts__phones {
@@ -2197,11 +2201,9 @@ body.mouse .price-item-btn:hover .btn-text {
           justify-content: flex-end;
 }
 
-._no-webp .error-404 {
-  background-image: url("../img/404-bg.jpg"); }
-
 .error-404 {
   height: 100vh;
+  background-image: url("../img/404-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2386,13 +2388,45 @@ body.mouse .price-item-btn:hover .btn-text {
   background: url("../img/pagination-next.svg") 0 0 no-repeat;
 }
 
+.modal-thanks {
+  background: #0e0e0e;
+  border: 1px solid rgba(226, 226, 226, 0.6);
+  width: 976px;
+}
+
+.modal-thanks__content {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-thanks__title {
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.modal-thanks__paragraph {
+  color: #f3a845;
+  font-weight: 600;
+  text-align: center;
+}
+
 @media (max-width: 1100px) {
   .header__nav {
     position: fixed;
     right: -150vw;
     top: 0;
     height: 100vh;
-    width: 300px;
+    width: 400px;
     background-color: #0e0e0e;
     z-index: 1;
     -webkit-transition: all 0.5s ease 0s;
@@ -2533,9 +2567,6 @@ body.mouse .price-item-btn:hover .btn-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-bottom: 10px;
   }
 
@@ -2653,10 +2684,6 @@ body.mouse .price-item-btn:hover .btn-text {
     width: 100%;
   }
 
-  .about-us__item-check-point:first-child {
-    padding-right: 20px;
-  }
-
   .portfolio-item {
     width: 48.7%;
   }
@@ -2701,6 +2728,10 @@ body.mouse .price-item-btn:hover .btn-text {
     width: 100%;
   }
 
+  .banner-news-page__content {
+    padding-left: 0;
+  }
+
   .contacts__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2725,10 +2756,6 @@ body.mouse .price-item-btn:hover .btn-text {
 }
 
 @media (max-width: 850px) {
-  .header__address {
-    display: none;
-  }
-
   .header__working-hours-icon {
     width: 11px;
     height: 11px;
@@ -2791,11 +2818,25 @@ body.mouse .price-item-btn:hover .btn-text {
     max-width: 87.5vw;
   }
 
+  .header__address {
+    display: none;
+  }
+
+  .header__telephone-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   .header__nav {
     top: -150vh;
     left: 0;
-    right: 0;
-    width: 100vh;
+    width: 100vw;
   }
 
   .header__nav._active {
@@ -3013,6 +3054,10 @@ body.mouse .price-item-btn:hover .btn-text {
     padding-bottom: 15px;
   }
 
+  .tech-service .faq {
+    padding-bottom: 80px;
+  }
+
   .about-us {
     padding: 80px 0;
   }
@@ -3040,10 +3085,21 @@ body.mouse .price-item-btn:hover .btn-text {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 25px;
+    padding-left: 0;
   }
 
   .about-us__item-check-point:first-child {
-    padding: 0 0 15px 0;
+    padding-bottom: 15px;
+  }
+
+  .about-us__item-check-point::before {
+    position: absolute;
+    content: url("../img/tick.svg");
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
   }
 
   .about-us__item-check-point-icon {
@@ -3082,6 +3138,18 @@ body.mouse .price-item-btn:hover .btn-text {
     padding: 15px 0 10px;
   }
 
+  .service-plain-text {
+    padding: 80px 0;
+  }
+
+  .service-title-and-text {
+    padding: 50px 0 80px;
+  }
+
+  .service-title-and-text__title {
+    padding-bottom: 15px;
+  }
+
   .tech-service-prices__title {
     padding-bottom: 20px;
   }
@@ -3104,6 +3172,24 @@ body.mouse .price-item-btn:hover .btn-text {
     max-width: 52%;
   }
 
+  .portfolio-service {
+    padding: 80px 0;
+  }
+
+  .portfolio-service .arrows {
+    display: none;
+  }
+
+  .portfolio-service .arrows-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 40px;
+  }
+
   .prices {
     padding: 50px 0 80px;
   }
@@ -3118,6 +3204,61 @@ body.mouse .price-item-btn:hover .btn-text {
 
   .price-item-title::after {
     right: 0;
+  }
+
+  .banner-news-page__content {
+    padding: 50px 0;
+  }
+
+  .news-page-main {
+    padding-top: 50px;
+  }
+
+  .news-page-main__citation {
+    margin: 50px 0;
+    padding: 30px 15px;
+  }
+
+  .news-page-main__citation-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .news-page-main__check-points {
+    padding-bottom: 50px;
+  }
+
+  .news-page-main__check-point {
+    padding-left: 30px;
+  }
+
+  .news-page-main__number-points {
+    padding: 50px 0;
+  }
+
+  .news-page-main__number-point-icon {
+    padding-right: 11px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .news-page-main__image-gallery {
+    grid-template-areas: "box1" "box2" "box3";
+    grid-gap: 10px;
+  }
+
+  .news-page-main__final-paragraph {
+    padding: 50px 0 30px;
+  }
+
+  .news-page-main__share-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .news-page-main__share-messanger {
+    width: 25px;
+    height: 25px;
   }
 
   .contacts {
@@ -3156,18 +3297,24 @@ body.mouse .price-item-btn:hover .btn-text {
   .pagination {
     font-size: 18px;
   }
+
+  .modal-thanks__content {
+    padding: 60px 20px;
+  }
+
+  .modal-thanks__title {
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .modal-thanks__paragraph {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 @media (max-width: 425px) {
-  ._no-webp .banner-home__slide1 {
-    background-image: url("../img/banner-home-bg-mob.png"); }
-
-  ._no-webp .banner-about-us__slide1, ._no-webp .banner-tech-service__slide1 {
-    background-image: url("../img/about-us-bg-mob.jpg"); }
-
-  ._no-webp .contact-us {
-    background-image: url("../img/contact-us-bg-mob.jpg"); }
-
   .contact-us__form-elements > * {
     width: 100%;
     margin-bottom: 12px;
@@ -3182,49 +3329,4 @@ body.mouse .price-item-btn:hover .btn-text {
     width: 49px;
     height: 49px;
   }
-}
-
-._webp .banner-home__slide1 { background-image: url(../img/banner-home-bcg.webp); }
-
-._webp .banner-about-us__slide1, ._webp .banner-tech-service__slide1 { background-image: url(../img/about-us-bcg.webp); }
-
-._webp .contact-us { background-image: url(../img/contact-us-bcg.webp); }
-
-._webp .services-item-diagnostics { background-image: url(../img/diagnostics.webp); }
-
-._webp .services-item-tech-service { background-image: url(../img/tech-service.webp); }
-
-._webp .services-item-electricity { background-image: url(../img/electricity.webp); }
-
-._webp .services-item-engin-repair { background-image: url(../img/engine-repair.webp); }
-
-._webp .services-item-running-gear-repair { background-image: url(../img/running-gear-repair.webp); }
-
-._webp .services-item-chip-tuning { background-image: url(../img/chip-tuning.webp); }
-
-._webp .why-us__item-warranty { background-image: url(../img/warranty.webp); }
-
-._webp .why-us__item-equipment { background-image: url(../img/equipment.webp); }
-
-._webp .why-us__item-specialists { background-image: url(../img/specialists.webp); }
-
-._webp .why-us__item-spare-parts { background-image: url(../img/spare-parts.webp); }
-
-._webp .banner-news-page { background-image: url(../img/news-page-bcg.webp); }
-
-._webp .error-404 { background-image: url(../img/404-bg.webp); }
-
-@media (max-width: 425px) {
-
-  ._webp .banner-home__slide1 { background-image: url(../img/banner-home-bg-mob.webp); }
-}
-
-@media (max-width: 425px) {
-
-  ._webp .banner-about-us__slide1, ._webp .banner-tech-service__slide1 { background-image: url(../img/about-us-bg-mob.webp); }
-}
-
-@media (max-width: 425px) {
-
-  ._webp .contact-us { background-image: url(../img/contact-us-bg-mob.webp); }
 }

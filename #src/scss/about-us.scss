@@ -67,8 +67,10 @@
     }
   }
 
-  &__item-paragraph {
-    padding-bottom: 15px;
+  &__item-paragraphs {
+    p {
+      padding-bottom: 15px;
+    }
   }
 
   &__item-check-points {
@@ -84,18 +86,39 @@
   &__item-check-point {
     display: flex;
     width: 48.7%;
+    padding-left: 30px;
+    position: relative;
 
-    @media (max-width: 1100px) {
-      &:first-child {
-        padding-right: 20px;
-      }
+    &::before {
+      position: absolute;
+      content: url("../img/tick.svg");
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 4px;
+    }
+
+    &:first-child {
+      padding-right: 20px;
     }
 
     @media (max-width: 650px) {
       width: 100%;
       flex-direction: column;
+      padding-top: 25px;
+      padding-left: 0;
+
       &:first-child {
-        padding: 0 0 15px 0;
+        padding-bottom: 15px;
+      }
+
+      &::before {
+        position: absolute;
+        content: url("../img/tick.svg");
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 0;
       }
     }
   }

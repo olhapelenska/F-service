@@ -1,13 +1,18 @@
 .banner-news-page {
-  background-image: url("../img/news-page-bcg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
-  &__container {
-  }
+  background-position: center;
 
   &__content {
     padding: 100px 0 124px 100px;
+
+    @media (max-width: 1100px) {
+      padding-left: 0;
+    }
+
+    @media (max-width: 650px) {
+      padding: 50px 0;
+    }
   }
 
   &__title {

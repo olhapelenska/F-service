@@ -1,0 +1,39 @@
+.modal-thanks {
+  background: #0e0e0e;
+  border: 1px solid rgba(226, 226, 226, 0.6);
+  width: 976px;
+
+  &__content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 650px) {
+      padding: 60px 20px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    padding-bottom: 10px;
+    text-align: center;
+
+    @media (max-width: 650px) {
+      padding-bottom: 5px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__paragraph {
+    color: #f3a845;
+    font-weight: 600;
+    text-align: center;
+
+    @media (max-width: 650px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

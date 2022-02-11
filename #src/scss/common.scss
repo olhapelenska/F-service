@@ -152,6 +152,14 @@ textarea {
   line-height: 22px;
 }
 
+.wp-text {
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
 .link {
   font-weight: 600;
   font-size: 14px;
@@ -170,6 +178,7 @@ textarea {
   border-radius: 5px;
   border: 1px solid #f3a845;
   transition: 0.2s;
+  cursor: pointer;
 
   .btn-text {
     font-weight: 600;

@@ -42,9 +42,6 @@
     }
   }
 
-  &__messangers-and-copy {
-  }
-
   &__messangers {
     display: flex;
     padding-bottom: 15px;
@@ -68,6 +65,10 @@
       &:not(:last-child) {
         margin-right: 20px;
       }
+    }
+
+    svg {
+      fill: #f3a845;
     }
   }
 
@@ -100,14 +101,8 @@
     }
   }
 
-  &__navigation {
-  }
-
   &__title {
     padding-bottom: 15px;
-  }
-
-  &__list {
   }
 
   &__list-item {
@@ -117,10 +112,10 @@
   }
 
   &__contacts-list-item {
+    a {
+      display: flex;
+    }
     display: flex;
-  }
-
-  &__services {
   }
 
   &__contacts {
@@ -135,8 +130,43 @@
   &__list-item-icon {
     padding-top: 3px;
     padding-right: 10px;
-  }
 
-  &__list-item-text {
+    svg {
+      fill: #fff;
+    }
+  }
+}
+
+body {
+  &.mouse {
+    .footer__navigation,
+    .footer__services {
+      .footer__list-item {
+        &:hover {
+          color: #f3a845;
+        }
+      }
+    }
+
+    .footer__contacts {
+      .footer__contacts-list-item-tel,
+      .footer__contacts-list-item-mail {
+        &:hover {
+          color: #f3a845;
+
+          svg {
+            fill: #f3a845;
+          }
+        }
+      }
+    }
+
+    .footer__messangers-item {
+      &:hover {
+        svg {
+          fill: #fff;
+        }
+      }
+    }
   }
 }

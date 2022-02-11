@@ -1,14 +1,7 @@
 .contact-us {
-  background-image: url("../img/contact-us-bcg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  @media (max-width: 425px) {
-    background-image: url("../img/contact-us-bg-mob.jpg");
-  }
-
-  &__container {
-  }
+  background-position: center;
 
   &__content {
     padding: 100px 0 85px;
@@ -16,12 +9,6 @@
     @media (max-width: 650px) {
       padding: 60px 20px 200px;
     }
-  }
-
-  &__form {
-  }
-
-  &__form-title {
   }
 
   &__form-paragraph {
@@ -49,12 +36,6 @@
         margin-bottom: 12px;
       }
     }
-  }
-
-  &__input {
-  }
-
-  &__checkbox {
   }
 
   &__btn {

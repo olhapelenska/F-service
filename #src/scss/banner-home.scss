@@ -2,9 +2,6 @@
   position: relative;
   color: #fff;
 
-  &__slider {
-  }
-
   &__phone {
     position: absolute;
     bottom: 30px;
@@ -22,11 +19,6 @@
     top: 50%;
     right: 7%;
     transform: translate(-50%, -50%);
-  }
-  .slick-dots li {
-  }
-
-  .slick-dots li.slick-active {
   }
 
   .slick-dots li button {
@@ -61,14 +53,9 @@
 
 .banner-home {
   &__slide1 {
-    background-image: url("../img/banner-home-bcg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: center;
-
-    @media (max-width: 425px) {
-      background-image: url("../img/banner-home-bg-mob.png");
-    }
+    background-position: center;
   }
 
   &__slide1-container {
@@ -107,14 +94,9 @@
 .banner-about-us,
 .banner-tech-service {
   &__slide1 {
-    background-image: url("../img/about-us-bcg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: center;
-
-    @media (max-width: 425px) {
-      background-image: url("../img/about-us-bg-mob.jpg");
-    }
+    background-position: center;
   }
 
   &__slide1-container {
@@ -143,48 +125,4 @@
       width: 244px;
     }
   }
-}
-
-.slick-slider {
-}
-
-.slick-slider.slick-initialized {
-}
-
-.slick-slider.slick-dotted {
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-track {
-  display: block;
-}
-
-.slick-slide {
-}
-
-.slick-slide.slick-active {
-}
-
-.slick-slide.slick-current {
-}
-
-.slick-slide.slick-center {
-}
-
-.slick-slide.slick-cloned {
-}
-
-.slick-arrow {
-}
-
-.slick-arrow.slick-prev {
-}
-
-.slick-arrow.slick-next {
-}
-
-.slick-arrow.slick-disabled {
 }
