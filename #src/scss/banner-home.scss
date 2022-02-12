@@ -20,17 +20,10 @@
   .slick-dots {
     display: flex;
     flex-direction: column;
-    height: 100px;
-    justify-content: space-between;
     position: absolute;
     top: 50%;
     right: 7%;
     transform: translate(-50%, -50%);
-  }
-  .slick-dots li {
-  }
-
-  .slick-dots li.slick-active {
   }
 
   .slick-dots li button {
@@ -51,7 +44,6 @@
     @media (max-width: 650px) {
       display: flex;
       padding-top: 48px;
-      // margin-top: auto;
     }
   }
 
@@ -144,46 +136,10 @@
   }
 }
 
-.slick-slider {
-}
-
-.slick-slider.slick-initialized {
-}
-
-.slick-slider.slick-dotted {
-}
-
 .slick-list {
   overflow: hidden;
 }
 
 .slick-track {
   display: block;
-}
-
-.slick-slide {
-}
-
-.slick-slide.slick-active {
-}
-
-.slick-slide.slick-current {
-}
-
-.slick-slide.slick-center {
-}
-
-.slick-slide.slick-cloned {
-}
-
-.slick-arrow {
-}
-
-.slick-arrow.slick-prev {
-}
-
-.slick-arrow.slick-next {
-}
-
-.slick-arrow.slick-disabled {
 }

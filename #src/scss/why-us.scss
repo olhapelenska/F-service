@@ -35,6 +35,8 @@
   }
 
   &__item {
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 25%;
     padding: 50px 25px 20px;
     display: flex;
