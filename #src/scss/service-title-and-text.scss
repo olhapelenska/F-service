@@ -8,16 +8,12 @@
   &__content {
   }
 
-  &__title {
-    padding-bottom: 20px;
-    @media (max-width: 650px) {
-      padding-bottom: 15px;
-    }
-  }
-
-  &__paragraph {
-    &:not(:last-child) {
-      padding-bottom: 15px;
+  &__text {
+    h2 {
+      margin-bottom: 20px;
+      @media (max-width: 650px) {
+        margin-bottom: 15px;
+      }
     }
   }
 }

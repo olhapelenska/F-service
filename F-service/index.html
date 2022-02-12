@@ -244,73 +244,47 @@
         </svg>
       </a>
       <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item normal-text">
+        <ul class="header__list menu-items">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./about-us.html">О нас</a>
           </li>
-          <li class="header__list-item normal-text">
-            <a class="header__list-link" href="services.html"
-              >Услуги
-              <span class="header__list-arrow">
-                <svg
-                  width="10"
-                  height="6"
-                  viewBox="0 0 10 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.57574 5.42426C4.81005 5.65858 5.18995 5.65858 5.42426 5.42426L9.24264 1.60589C9.47696 1.37157 9.47696 0.991674 9.24264 0.757359C9.00833 0.523045 8.62843 0.523045 8.39411 0.757359L5 4.15147L1.60589 0.757359C1.37157 0.523044 0.991674 0.523044 0.757359 0.757359C0.523045 0.991674 0.523045 1.37157 0.757359 1.60589L4.57574 5.42426ZM4.4 4L4.4 5L5.6 5L5.6 4L4.4 4Z"
-                  />
-                </svg>
-              </span>
-            </a>
-            <span class="header__list-arrow-mob arrow">
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.57574 5.42426C4.81005 5.65858 5.18995 5.65858 5.42426 5.42426L9.24264 1.60589C9.47696 1.37157 9.47696 0.991674 9.24264 0.757359C9.00833 0.523045 8.62843 0.523045 8.39411 0.757359L5 4.15147L1.60589 0.757359C1.37157 0.523044 0.991674 0.523044 0.757359 0.757359C0.523045 0.991674 0.523045 1.37157 0.757359 1.60589L4.57574 5.42426ZM4.4 4L4.4 5L5.6 5L5.6 4L4.4 4Z"
-                />
-              </svg>
-            </span>
-            <ul class="header__sub-list">
-              <li class="header__sub-list-item normal-text">
+          <li
+            class="header__list-item menu-item menu-item-has-children normal-text"
+          >
+            <a class="header__list-link" href="services.html">Услуги</a>
+            <ul class="header__sub-list sub-menu">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Диагностика</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="./tech-service.html"
                   >Тех. обслуживание</a
                 >
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Электрика</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Ремонт ходовой</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Ремонт двигателя</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Чип-тюнинг</a>
               </li>
             </ul>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./prices.html">Цены</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./news.html">Новости</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./contacts.html">Контакты</a>
           </li>
         </ul>
@@ -497,16 +471,18 @@
     >
       <div class="banner-home__slide1-container container">
         <div class="banner-home__slide1-content">
-          <h1 class="banner-home__slide1-title title-h1">
-            Полная диагностика<br />
-            автомобиля
-          </h1>
-          <p class="banner-home__slide1-paragraph normal-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sollicitudin sagittis feugiat massa elit varius pretium dolor
-            tortor. Donec sed in faucibus at sed. Leo facilisi mauris, arcu cras
-            aliquet id euismod odio nec.
-          </p>
+          <div class="banner-home__slide1-text wp-text">
+            <h1>
+              Полная диагностика<br />
+              автомобиля
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sollicitudin sagittis feugiat massa elit varius pretium dolor
+              tortor. Donec sed in faucibus at sed. Leo facilisi mauris, arcu
+              cras aliquet id euismod odio nec.
+            </p>
+          </div>
           <div class="banner__messangers">
             <div class="banner__messanger">
               <svg
@@ -563,16 +539,18 @@
     >
       <div class="banner-home__slide1-container container">
         <div class="banner-home__slide1-content">
-          <h1 class="banner-home__slide1-title title-h1">
-            Полная диагностика<br />
-            автомобиля
-          </h1>
-          <p class="banner-home__slide1-paragraph normal-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sollicitudin sagittis feugiat massa elit varius pretium dolor
-            tortor. Donec sed in faucibus at sed. Leo facilisi mauris, arcu cras
-            aliquet id euismod odio nec.
-          </p>
+          <div class="banner-home__slide1-text wp-text">
+            <h1>
+              Полная диагностика<br />
+              автомобиля
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sollicitudin sagittis feugiat massa elit varius pretium dolor
+              tortor. Donec sed in faucibus at sed. Leo facilisi mauris, arcu
+              cras aliquet id euismod odio nec.
+            </p>
+          </div>
           <div class="banner__messangers">
             <div class="banner__messanger">
               <svg
@@ -629,16 +607,18 @@
     >
       <div class="banner-home__slide1-container container">
         <div class="banner-home__slide1-content">
-          <h1 class="banner-home__slide1-title title-h1">
-            Полная диагностика<br />
-            автомобиля
-          </h1>
-          <p class="banner-home__slide1-paragraph normal-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sollicitudin sagittis feugiat massa elit varius pretium dolor
-            tortor. Donec sed in faucibus at sed. Leo facilisi mauris, arcu cras
-            aliquet id euismod odio nec.
-          </p>
+          <div class="banner-home__slide1-text wp-text">
+            <h1>
+              Полная диагностика<br />
+              автомобиля
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sollicitudin sagittis feugiat massa elit varius pretium dolor
+              tortor. Donec sed in faucibus at sed. Leo facilisi mauris, arcu
+              cras aliquet id euismod odio nec.
+            </p>
+          </div>
           <div class="banner__messangers">
             <div class="banner__messanger">
               <svg
@@ -730,10 +710,10 @@
   <div class="contact-home__container container">
     <div class="contact-home__content">
       <div class="contact-home__form">
-        <h3 class="contact-home__form-title title-h3">Записаться</h3>
-        <p class="contact-home__form-paragraph normal-text">
-          Оставьте номер, и мы Вам перезвоним!
-        </p>
+        <div class="contact-home__form-text wp-text">
+          <h3>Записаться</h3>
+          <p>Оставьте номер, и мы Вам перезвоним!</p>
+        </div>
         <div class="contact-home__form-elements form-elements">
           <div class="contact-home__input">
             <input
@@ -782,14 +762,18 @@
 
         <section class="services-home">
   <div class="services-home__container container">
-    <h2 class="services-home__title title-h2">Основные услуги СТО</h2>
+    <div class="services-home__title wp-text">
+      <h2>Основные услуги СТО</h2>
+    </div>
     <div class="services-items">
       <div
         class="services-item"
         style="background-image: url(./img/diagnostics.jpg)"
       >
-        <h3 class="services-item-title title-h3">Диагностика</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Диагностика</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -803,8 +787,10 @@
         class="services-item"
         style="background-image: url(./img/tech-service.jpg)"
       >
-        <h3 class="services-item-title title-h3">Тех. Обслуживание</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Тех. Обслуживание</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -818,8 +804,10 @@
         class="services-item"
         style="background-image: url(./img/electricity.jpg)"
       >
-        <h3 class="services-item-title title-h3">Электрика</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Электрика</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -833,8 +821,10 @@
         class="services-item"
         style="background-image: url(./img/engine-repair.png)"
       >
-        <h3 class="services-item-title title-h3">Ремонт двигателя</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Ремонт двигателя</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -848,8 +838,10 @@
         class="services-item"
         style="background-image: url(./img/running-gear-repair.jpg)"
       >
-        <h3 class="services-item-title title-h3">Ремонт ходовой</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Ремонт ходовой</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -863,8 +855,10 @@
         class="services-item"
         style="background-image: url(./img/chip-tuning.jpg)"
       >
-        <h3 class="services-item-title title-h3">Чип-тюнинг</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Чип-тюнинг</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -880,9 +874,9 @@
  <section class="home-title-and-text">
   <div class="container">
     <div class="home-title-and-text__content">
-      <h2 class="home-title-and-text__title title-h2">
-        Vulputate imperdiet non.
-      </h2>
+      <div class="home-title-and-text__title wp-text">
+        <h2>Vulputate imperdiet non.</h2>
+      </div>
       <div class="home-title-and-text__paragraph wp-text">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non cursus
@@ -908,13 +902,13 @@
   <div class="contact-us__container container">
     <div class="contact-us__content">
       <div class="contact-us__form">
-        <h3 class="contact-us__form-title title-h3">
-          Интересуют детали? <br />
-          Звоните!
-        </h3>
-        <p class="contact-us__form-paragraph normal-text">
-          Оставьте номер, и мы Вам перезвоним!
-        </p>
+        <div class="contact-us__form-text wp-text">
+          <h3>
+            Интересуют детали? <br />
+            Звоните!
+          </h3>
+          <p>Оставьте номер, и мы Вам перезвоним!</p>
+        </div>
         <div class="contact-us__form-elements form-elements">
           <div class="contact-us__input">
             <input
@@ -998,16 +992,13 @@
 
         <section class="why-us">
   <div class="why-us__container container">
-    <div class="why-us__top-text">
-      <h2 class="why-us__title title-h2">Почему с нами удобно?</h2>
-      <div class="why-us__paragraph wp-text">
-        <p>
-          СТО «F-Service» — это знающие специалисты, современное оборудование и
-          сильные гарантии. Мы выполним все работы для вашего автомобиля,
-          поможем с подбором и доставкой запчастей. Наше кредо — довольный
-          клиент.
-        </p>
-      </div>
+    <div class="why-us__text wp-text">
+      <h2>Почему с нами удобно?</h2>
+      <p>
+        СТО «F-Service» — это знающие специалисты, современное оборудование и
+        сильные гарантии. Мы выполним все работы для вашего автомобиля, поможем
+        с подбором и доставкой запчастей. Наше кредо — довольный клиент.
+      </p>
     </div>
     <div class="why-us__items">
       <div
@@ -1037,10 +1028,10 @@
             </defs>
           </svg>
         </div>
-        <h3 class="why-us__item-title title-h3">Гарантия</h3>
-        <p class="why-us__item-paragraph normal-text">
-          даем гарантию на все виды выполненных работ на нашем СТО
-        </p>
+        <div class="why-us__item-text wp-text">
+          <h3>Гарантия</h3>
+          <p>даем гарантию на все виды выполненных работ на нашем СТО</p>
+        </div>
       </div>
       <div
         class="why-us__item"
@@ -1065,11 +1056,14 @@
             </defs>
           </svg>
         </div>
-        <h3 class="why-us__item-title title-h3">Оборудование</h3>
-        <p class="why-us__item-paragraph normal-text">
-          используем диагностическое оборудование и только оригинальные сканеры,
-          благодаря этому диагностика дает точную картину состояния автомобиля
-        </p>
+        <div class="why-us__item-text wp-text">
+          <h3>Оборудование</h3>
+          <p>
+            используем диагностическое оборудование и только оригинальные
+            сканеры, благодаря этому диагностика дает точную картину состояния
+            автомобиля
+          </p>
+        </div>
       </div>
       <div
         class="why-us__item"
@@ -1107,12 +1101,14 @@
             />
           </svg>
         </div>
-        <h3 class="why-us__item-title title-h3">Специалисты</h3>
-        <p class="why-us__item-paragraph normal-text">
-          опыт каждого специалиста, который будет работать с вашей машиной,
-          составляет более 5 лет, что гарантирует хорошую осведомленность и
-          высокое качество работы
-        </p>
+        <div class="why-us__item-text wp-text">
+          <h3>Специалисты</h3>
+          <p>
+            опыт каждого специалиста, который будет работать с вашей машиной,
+            составляет более 5 лет, что гарантирует хорошую осведомленность и
+            высокое качество работы
+          </p>
+        </div>
       </div>
       <div
         class="why-us__item"
@@ -1138,19 +1134,23 @@
             />
           </svg>
         </div>
-        <h3 class="why-us__item-title title-h3">Подбор запчастей</h3>
-        <p class="why-us__item-paragraph normal-text">
-          мы сотрудничаем с самыми большими складами в Одессе и Украине, а также
-          есть партнери в Европе что позволяет получить практически любую
-          запчасть по доступной цене.
-        </p>
+        <div class="why-us__item-text wp-text">
+          <h3>Подбор запчастей</h3>
+          <p>
+            мы сотрудничаем с самыми большими складами в Одессе и Украине, а
+            также есть партнери в Европе что позволяет получить практически
+            любую запчасть по доступной цене.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
  <section class="car-brands">
   <div class="container">
-    <h2 class="car-brands__title title-h2">Работаем с марками авто:</h2>
+    <div class="car-brands__title wp-text">
+      <h2>Работаем с марками авто:</h2>
+    </div>
   </div>
   <div class="car-brands__brands">
     <div class="container">
@@ -1177,12 +1177,14 @@
 
         <section class="faq">
   <div class="container">
-    <h2 class="faq__title title-h2">Частые вопросы</h2>
+    <div class="faq__title wp-text">
+      <h2>Частые вопросы</h2>
+    </div>
     <div class="faq__questions">
       <div class="faq__question accordion-item">
-        <h4 class="faq__question-title accordion-title normal-text">
-          Надо ли при смене моторного масла менять масляный фильтр?
-        </h4>
+        <div class="faq__question-title accordion-title wp-text">
+          <p>Надо ли при смене моторного масла менять масляный фильтр?</p>
+        </div>
         <div class="faq__question-text accordion-text wp-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo,
@@ -1198,9 +1200,9 @@
         </div>
       </div>
       <div class="faq__question accordion-item">
-        <h4 class="faq__question-title accordion-title normal-text">
-          Надо ли при смене моторного масла проводить промывку двигателя?
-        </h4>
+        <div class="faq__question-title accordion-title wp-text">
+          <p>Надо ли при смене моторного масла проводить промывку двигателя?</p>
+        </div>
         <div class="faq__question-text accordion-text wp-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo,
@@ -1216,9 +1218,9 @@
         </div>
       </div>
       <div class="faq__question accordion-item">
-        <h4 class="faq__question-title accordion-title normal-text">
-          Когда нужно проводить замену свечей зажигания?
-        </h4>
+        <div class="faq__question-title accordion-title wp-text">
+          <p>Когда нужно проводить замену свечей зажигания?</p>
+        </div>
         <div class="faq__question-text accordion-text wp-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo,
@@ -1234,9 +1236,11 @@
         </div>
       </div>
       <div class="faq__question accordion-item">
-        <h4 class="faq__question-title accordion-title normal-text">
-          Как часто нужно выполнять диагностику автомобиля автовладельцем?
-        </h4>
+        <div class="faq__question-title accordion-title wp-text">
+          <p>
+            Как часто нужно выполнять диагностику автомобиля автовладельцем?
+          </p>
+        </div>
         <div class="faq__question-text accordion-text wp-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo,
@@ -1256,16 +1260,16 @@
 </section>
  <section class="news-section">
   <div class="container">
-    <h2 class="news-section__title title-h2">Новости</h2>
+    <div class="news-section__title wp-text"><h2>Новости</h2></div>
     <div class="news-items">
   <div class="news-item">
     <div class="news-item-img">
       <img src="./img/man-in-blue.jpg" alt="man in blue" />
     </div>
     <div class="news-item-content">
-      <p class="news-item-date normal-text">26.08.21</p>
-      <h3 class="news-item-title title-h3">Lorem ipsum dolor</h3>
-      <div class="news-item-paragraph wp-text">
+      <div class="news-item-text wp-text">
+        <span>26.08.21</span>
+        <h3>Lorem ipsum dolor</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere purus
           ridiculus amet sit vel eleifend. Lorem ipsum dolor sit amet.
@@ -1279,9 +1283,9 @@
       <img src="./img/car-audi.jpg" alt="car" />
     </div>
     <div class="news-item-content">
-      <p class="news-item-date normal-text">26.08.21</p>
-      <h3 class="news-item-title title-h3">Lorem ipsum dolor</h3>
-      <div class="news-item-paragraph wp-text">
+      <div class="news-item-text wp-text">
+        <span>26.08.21</span>
+        <h3>Lorem ipsum dolor</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere purus
           ridiculus amet sit vel eleifend. Lorem ipsum dolor sit amet.
@@ -1295,9 +1299,9 @@
       <img src="./img/man-in-cap.jpg" alt="man in a cap" />
     </div>
     <div class="news-item-content">
-      <p class="news-item-date normal-text">26.08.21</p>
-      <h3 class="news-item-title title-h3">Lorem ipsum dolor</h3>
-      <div class="news-item-paragraph wp-text">
+      <div class="news-item-text wp-text">
+        <span>26.08.21</span>
+        <h3>Lorem ipsum dolor</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere purus
           ridiculus amet sit vel eleifend. Lorem ipsum dolor sit amet.
@@ -1341,10 +1345,10 @@
           />
         </svg>
       </button>
-      <h3 class="contact-home__form-title title-h3">Записаться</h3>
-      <p class="contact-home__form-paragraph normal-text">
-        Оставьте номер, и мы Вам перезвоним!
-      </p>
+      <div class="contact-home__form-text wp-text">
+        <h3>Записаться</h3>
+        <p>Оставьте номер, и мы Вам перезвоним!</p>
+      </div>
       <div class="contact-home__form-elements form-elements">
         <div class="contact-home__input">
           <input
@@ -1416,7 +1420,9 @@
     </svg>
   </button>
   <div class="modal-thanks__content">
-    <h2 class="modal-thanks__title title-h2">Спасибо за вашу заявку!</h2>
+    <div class="modal-thanks__title wp-text">
+      <h2>Спасибо за вашу заявку!</h2>
+    </div>
     <div class="modal-thanks__paragraph wp-text">
       <p>Мы свяжемся с вами в ближайшее время!</p>
     </div>
@@ -1428,7 +1434,7 @@
   <div class="container">
     <div class="footer__content">
       <div class="footer__assets">
-        <div class="footer__logo">
+        <a href="./index.html" class="footer__logo">
           <svg
             viewBox="0 0 182 39"
             fill="none"
@@ -1589,7 +1595,7 @@
               fill="white"
             />
           </svg>
-        </div>
+        </a>
         <div class="footer__messangers-and-copy">
           <div class="footer__messangers">
             <a href="#" target="_blank" class="footer__messangers-item">
@@ -1809,9 +1815,9 @@
           </ul>
         </div>
       </div>
-      <p class="footer__copy-mob normal-text">
-        © 2021 СТО «F-Service» в Одессе
-      </p>
+      <div class="footer__copy-mob wp-text">
+        <p>© 2021 СТО «F-Service» в Одессе</p>
+      </div>
     </div>
   </div>
 </footer>

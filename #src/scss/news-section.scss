@@ -69,23 +69,25 @@
   }
 }
 
-.news-item-date {
-  color: #b6b6b6;
-}
-
-.news-item-title {
-  padding: 4px 0 10px;
-
-  @media (max-width: 650px) {
-    padding: 4px 0 5px;
+.news-item-text {
+  span {
+    color: #b6b6b6;
   }
-}
 
-.news-item-paragraph {
-  padding-bottom: 10px;
+  h3 {
+    margin: 4px 0 10px;
 
-  @media (max-width: 650px) {
-    padding-bottom: 5px;
+    @media (max-width: 650px) {
+      margin: 4px 0 5px;
+    }
+  }
+
+  p {
+    margin-bottom: 10px !important;
+
+    @media (max-width: 650px) {
+      margin-bottom: 5px !important;
+    }
   }
 }
 

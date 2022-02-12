@@ -65,77 +65,42 @@
     @media (max-width: 1100px) {
       width: 100%;
     }
-  }
 
-  &__item-paragraphs {
-    p {
-      padding-bottom: 15px;
-    }
-  }
+    &.wp-text {
+      ul {
+        margin: 0;
+        display: flex;
+        padding-top: 10px;
 
-  &__item-check-points {
-    display: flex;
-    padding-top: 10px;
+        @media (max-width: 650px) {
+          flex-direction: column;
+          padding-top: 0;
+        }
 
-    @media (max-width: 650px) {
-      flex-direction: column;
-      padding-top: 0;
-    }
-  }
+        li {
+          margin: 0;
+          width: 48.7%;
+          &:first-child {
+            padding-right: 20px;
+          }
 
-  &__item-check-point {
-    display: flex;
-    width: 48.7%;
-    padding-left: 30px;
-    position: relative;
+          @media (max-width: 650px) {
+            width: 100%;
+            flex-direction: column;
+            padding-top: 25px;
+            padding-left: 0;
 
-    &::before {
-      position: absolute;
-      content: url("../img/tick.svg");
-      width: 20px;
-      height: 20px;
-      left: 0;
-      top: 4px;
-    }
+            &:first-child {
+              padding-bottom: 15px;
+              padding-right: 0;
+            }
 
-    &:first-child {
-      padding-right: 20px;
-    }
-
-    @media (max-width: 650px) {
-      width: 100%;
-      flex-direction: column;
-      padding-top: 25px;
-      padding-left: 0;
-
-      &:first-child {
-        padding-bottom: 15px;
-      }
-
-      &::before {
-        position: absolute;
-        content: url("../img/tick.svg");
-        width: 20px;
-        height: 20px;
-        left: 0;
-        top: 0;
+            &::before {
+              top: 0;
+            }
+          }
+        }
       }
     }
-  }
-
-  &__item-check-point-icon {
-    svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    padding-right: 10px;
-
-    @media (max-width: 650px) {
-      padding-bottom: 8px;
-    }
-  }
-
-  &__item-check-point-text {
   }
 }

@@ -22,11 +22,13 @@
     }
   }
 
-  &__form-title {
-  }
-
-  &__form-paragraph {
-    padding: 4px 0 15px;
+  &__form-text {
+    h3 {
+      margin-bottom: 4px;
+    }
+    p {
+      margin-bottom: 15px !important;
+    }
   }
 
   &__form-elements {

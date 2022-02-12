@@ -244,73 +244,47 @@
         </svg>
       </a>
       <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item normal-text">
+        <ul class="header__list menu-items">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./about-us.html">О нас</a>
           </li>
-          <li class="header__list-item normal-text">
-            <a class="header__list-link" href="services.html"
-              >Услуги
-              <span class="header__list-arrow">
-                <svg
-                  width="10"
-                  height="6"
-                  viewBox="0 0 10 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.57574 5.42426C4.81005 5.65858 5.18995 5.65858 5.42426 5.42426L9.24264 1.60589C9.47696 1.37157 9.47696 0.991674 9.24264 0.757359C9.00833 0.523045 8.62843 0.523045 8.39411 0.757359L5 4.15147L1.60589 0.757359C1.37157 0.523044 0.991674 0.523044 0.757359 0.757359C0.523045 0.991674 0.523045 1.37157 0.757359 1.60589L4.57574 5.42426ZM4.4 4L4.4 5L5.6 5L5.6 4L4.4 4Z"
-                  />
-                </svg>
-              </span>
-            </a>
-            <span class="header__list-arrow-mob arrow">
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.57574 5.42426C4.81005 5.65858 5.18995 5.65858 5.42426 5.42426L9.24264 1.60589C9.47696 1.37157 9.47696 0.991674 9.24264 0.757359C9.00833 0.523045 8.62843 0.523045 8.39411 0.757359L5 4.15147L1.60589 0.757359C1.37157 0.523044 0.991674 0.523044 0.757359 0.757359C0.523045 0.991674 0.523045 1.37157 0.757359 1.60589L4.57574 5.42426ZM4.4 4L4.4 5L5.6 5L5.6 4L4.4 4Z"
-                />
-              </svg>
-            </span>
-            <ul class="header__sub-list">
-              <li class="header__sub-list-item normal-text">
+          <li
+            class="header__list-item menu-item menu-item-has-children normal-text"
+          >
+            <a class="header__list-link" href="services.html">Услуги</a>
+            <ul class="header__sub-list sub-menu">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Диагностика</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="./tech-service.html"
                   >Тех. обслуживание</a
                 >
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Электрика</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Ремонт ходовой</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Ремонт двигателя</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Чип-тюнинг</a>
               </li>
             </ul>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./prices.html">Цены</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./news.html">Новости</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./contacts.html">Контакты</a>
           </li>
         </ul>
@@ -494,14 +468,16 @@
     <div class="path normal-text">
       <a href="./index.html">F-service</a> / Услуги
     </div>
-    <h2 class="services__title title-h2">Услуги</h2>
+    <div class="services__title wp-text"><h1>Услуги</h1></div>
     <div class="services-items">
       <div
         class="services-item"
         style="background-image: url(./img/diagnostics.jpg)"
       >
-        <h3 class="services-item-title title-h3">Диагностика</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Диагностика</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -515,8 +491,10 @@
         class="services-item"
         style="background-image: url(./img/tech-service.jpg)"
       >
-        <h3 class="services-item-title title-h3">Тех. Обслуживание</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Тех. Обслуживание</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -530,8 +508,10 @@
         class="services-item"
         style="background-image: url(./img/electricity.jpg)"
       >
-        <h3 class="services-item-title title-h3">Электрика</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Электрика</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -545,8 +525,10 @@
         class="services-item"
         style="background-image: url(./img/engine-repair.png)"
       >
-        <h3 class="services-item-title title-h3">Ремонт двигателя</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Ремонт двигателя</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -560,8 +542,10 @@
         class="services-item"
         style="background-image: url(./img/running-gear-repair.jpg)"
       >
-        <h3 class="services-item-title title-h3">Ремонт ходовой</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Ремонт ходовой</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -575,8 +559,10 @@
         class="services-item"
         style="background-image: url(./img/chip-tuning.jpg)"
       >
-        <h3 class="services-item-title title-h3">Чип-тюнинг</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Чип-тюнинг</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -590,10 +576,10 @@
         class="services-item"
         style="background-image: url(./img/car-russificaation.jpg)"
       >
-        <h3 class="services-item-title title-h3">
-          Русификация американских авто в Одессе
-        </h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Русификация американских авто в Одессе</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -607,8 +593,10 @@
         class="services-item"
         style="background-image: url(./img/dsg-tuning.jpg)"
       >
-        <h3 class="services-item-title title-h3">Чип-тюнинг DSG</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Чип-тюнинг DSG</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -622,10 +610,10 @@
         class="services-item"
         style="background-image: url(./img/svitch-of.jpg)"
       >
-        <h3 class="services-item-title title-h3">
-          Отключение вихревых заслонок
-        </h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Отключение вихревых заслонок</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -639,8 +627,10 @@
         class="services-item"
         style="background-image: url(./img/svitch-addblue.jpg)"
       >
-        <h3 class="services-item-title title-h3">Отключение системы AdBlue</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Отключение системы AdBlue</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -654,10 +644,10 @@
         class="services-item"
         style="background-image: url(./img/svitch-of-oxygen.jpg)"
       >
-        <h3 class="services-item-title title-h3">
-          Отключение лямбда-зонда, датчика кислорода
-        </h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Отключение лямбда-зонда, датчика кислорода</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -671,8 +661,10 @@
         class="services-item"
         style="background-image: url(./img/svitch-of-egr.jpg)"
       >
-        <h3 class="services-item-title title-h3">Отключение клапана egr</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Отключение клапана egr</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -686,8 +678,10 @@
         class="services-item"
         style="background-image: url(./img/remove-filter.jpg)"
       >
-        <h3 class="services-item-title title-h3">Удаления сажевого фильтра</h3>
-        <p class="services-item-price">от 100 грн</p>
+        <div class="services-item-text wp-text">
+          <h3>Удаления сажевого фильтра</h3>
+          <p>от 100 грн</p>
+        </div>
         <div class="services-item-buttons">
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
@@ -729,10 +723,10 @@
           />
         </svg>
       </button>
-      <h3 class="contact-home__form-title title-h3">Записаться</h3>
-      <p class="contact-home__form-paragraph normal-text">
-        Оставьте номер, и мы Вам перезвоним!
-      </p>
+      <div class="contact-home__form-text wp-text">
+        <h3>Записаться</h3>
+        <p>Оставьте номер, и мы Вам перезвоним!</p>
+      </div>
       <div class="contact-home__form-elements form-elements">
         <div class="contact-home__input">
           <input
@@ -804,7 +798,9 @@
     </svg>
   </button>
   <div class="modal-thanks__content">
-    <h2 class="modal-thanks__title title-h2">Спасибо за вашу заявку!</h2>
+    <div class="modal-thanks__title wp-text">
+      <h2>Спасибо за вашу заявку!</h2>
+    </div>
     <div class="modal-thanks__paragraph wp-text">
       <p>Мы свяжемся с вами в ближайшее время!</p>
     </div>
@@ -816,7 +812,7 @@
   <div class="container">
     <div class="footer__content">
       <div class="footer__assets">
-        <div class="footer__logo">
+        <a href="./index.html" class="footer__logo">
           <svg
             viewBox="0 0 182 39"
             fill="none"
@@ -977,7 +973,7 @@
               fill="white"
             />
           </svg>
-        </div>
+        </a>
         <div class="footer__messangers-and-copy">
           <div class="footer__messangers">
             <a href="#" target="_blank" class="footer__messangers-item">
@@ -1197,9 +1193,9 @@
           </ul>
         </div>
       </div>
-      <p class="footer__copy-mob normal-text">
-        © 2021 СТО «F-Service» в Одессе
-      </p>
+      <div class="footer__copy-mob wp-text">
+        <p>© 2021 СТО «F-Service» в Одессе</p>
+      </div>
     </div>
   </div>
 </footer>

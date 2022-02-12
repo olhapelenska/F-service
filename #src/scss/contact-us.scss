@@ -17,13 +17,12 @@
   &__form {
   }
 
-  &__form-title {
-  }
-
-  &__form-paragraph {
-    padding: 4px 0 25px;
-    @media (max-width: 650px) {
-      padding: 5px 0 15px;
+  &__form-text {
+    p {
+      margin: 4px 0 25px !important;
+      @media (max-width: 650px) {
+        margin: 5px 0 15px !important;
+      }
     }
   }
 

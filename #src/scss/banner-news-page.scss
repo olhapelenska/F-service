@@ -18,16 +18,20 @@
     }
   }
 
-  &__title {
-    color: #fff;
-    padding-bottom: 12px;
-  }
+  &__text {
+    &.wp-text {
+      h1 {
+        color: #fff;
+        margin-bottom: 15px;
+      }
 
-  &__date {
-    padding: 3px 20px;
-    background: rgba(14, 14, 14, 0.8);
-    border: 1px solid rgba(226, 226, 226, 0.6);
-    color: #898989;
+      span {
+        padding: 3px 20px;
+        background: rgba(14, 14, 14, 0.8);
+        border: 1px solid rgba(226, 226, 226, 0.6);
+        color: #898989;
+      }
+    }
   }
 
   .path {

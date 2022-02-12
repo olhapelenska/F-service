@@ -25,9 +25,31 @@ let isMobile = {
   },
 };
 
+function addElement() {
+  const menuLink = document.querySelector(".menu-item-has-children > a");
+
+  menuLink.insertAdjacentHTML(
+    "afterend",
+    `<span class="header__list-arrow-mob arrow">
+    <svg
+      width="15"
+      height="9"
+      viewBox="0 0 10 6"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.57574 5.42426C4.81005 5.65858 5.18995 5.65858 5.42426 5.42426L9.24264 1.60589C9.47696 1.37157 9.47696 0.991674 9.24264 0.757359C9.00833 0.523045 8.62843 0.523045 8.39411 0.757359L5 4.15147L1.60589 0.757359C1.37157 0.523044 0.991674 0.523044 0.757359 0.757359C0.523045 0.991674 0.523045 1.37157 0.757359 1.60589L4.57574 5.42426ZM4.4 4L4.4 5L5.6 5L5.6 4L4.4 4Z"
+      />
+    </svg>
+  </span>`
+  );
+}
+
 let body = document.querySelector("body");
 if (isMobile.any()) {
   body.classList.add("touch");
+  addElement();
   let arrow = document.querySelectorAll(".arrow");
   for (i = 0; i < arrow.length; i++) {
     let thisLink = arrow[i].previousElementSibling;

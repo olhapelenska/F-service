@@ -244,73 +244,47 @@
         </svg>
       </a>
       <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item normal-text">
+        <ul class="header__list menu-items">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./about-us.html">О нас</a>
           </li>
-          <li class="header__list-item normal-text">
-            <a class="header__list-link" href="services.html"
-              >Услуги
-              <span class="header__list-arrow">
-                <svg
-                  width="10"
-                  height="6"
-                  viewBox="0 0 10 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.57574 5.42426C4.81005 5.65858 5.18995 5.65858 5.42426 5.42426L9.24264 1.60589C9.47696 1.37157 9.47696 0.991674 9.24264 0.757359C9.00833 0.523045 8.62843 0.523045 8.39411 0.757359L5 4.15147L1.60589 0.757359C1.37157 0.523044 0.991674 0.523044 0.757359 0.757359C0.523045 0.991674 0.523045 1.37157 0.757359 1.60589L4.57574 5.42426ZM4.4 4L4.4 5L5.6 5L5.6 4L4.4 4Z"
-                  />
-                </svg>
-              </span>
-            </a>
-            <span class="header__list-arrow-mob arrow">
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.57574 5.42426C4.81005 5.65858 5.18995 5.65858 5.42426 5.42426L9.24264 1.60589C9.47696 1.37157 9.47696 0.991674 9.24264 0.757359C9.00833 0.523045 8.62843 0.523045 8.39411 0.757359L5 4.15147L1.60589 0.757359C1.37157 0.523044 0.991674 0.523044 0.757359 0.757359C0.523045 0.991674 0.523045 1.37157 0.757359 1.60589L4.57574 5.42426ZM4.4 4L4.4 5L5.6 5L5.6 4L4.4 4Z"
-                />
-              </svg>
-            </span>
-            <ul class="header__sub-list">
-              <li class="header__sub-list-item normal-text">
+          <li
+            class="header__list-item menu-item menu-item-has-children normal-text"
+          >
+            <a class="header__list-link" href="services.html">Услуги</a>
+            <ul class="header__sub-list sub-menu">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Диагностика</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="./tech-service.html"
                   >Тех. обслуживание</a
                 >
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Электрика</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Ремонт ходовой</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Ремонт двигателя</a>
               </li>
-              <li class="header__sub-list-item normal-text">
+              <li class="header__sub-list-item menu-item normal-text">
                 <a class="header__sub-list-link" href="#">Чип-тюнинг</a>
               </li>
             </ul>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./prices.html">Цены</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./news.html">Новости</a>
           </li>
-          <li class="header__list-item normal-text">
+          <li class="header__list-item menu-item normal-text">
             <a class="header__list-link" href="./contacts.html">Контакты</a>
           </li>
         </ul>
@@ -496,7 +470,7 @@
         <div class="path normal-text">
           <a href="./index.html">F-service</a> / Контакты
         </div>
-        <h1 class="contacts__title title-h1">Контакты</h1>
+        <div class="contacts__title wp-text"><h1>Контакты</h1></div>
         <div class="contacts__contact-items">
           <div class="contacts__adress-item">
             <div class="contacts__adress-icon">
@@ -610,11 +584,13 @@
         </div>
       </div>
       <div class="contacts__form">
-        <h3 class="contacts__form-title title-h3">Остались вопросы?</h3>
-        <p class="contacts__form-paragraph normal-text">
-          Вы также можете отправить нам сообщение прямо сейчас, используя форму
-          ниже:
-        </p>
+        <div class="contacts__form-text wp-text">
+          <h3>Остались вопросы?</h3>
+          <p>
+            Вы также можете отправить нам сообщение прямо сейчас, используя
+            форму ниже:
+          </p>
+        </div>
         <div class="contacts__form-elements form-elements">
           <div class="contacts__input">
             <input
@@ -693,7 +669,9 @@
     </svg>
   </button>
   <div class="modal-thanks__content">
-    <h2 class="modal-thanks__title title-h2">Спасибо за вашу заявку!</h2>
+    <div class="modal-thanks__title wp-text">
+      <h2>Спасибо за вашу заявку!</h2>
+    </div>
     <div class="modal-thanks__paragraph wp-text">
       <p>Мы свяжемся с вами в ближайшее время!</p>
     </div>
@@ -705,7 +683,7 @@
   <div class="container">
     <div class="footer__content">
       <div class="footer__assets">
-        <div class="footer__logo">
+        <a href="./index.html" class="footer__logo">
           <svg
             viewBox="0 0 182 39"
             fill="none"
@@ -866,7 +844,7 @@
               fill="white"
             />
           </svg>
-        </div>
+        </a>
         <div class="footer__messangers-and-copy">
           <div class="footer__messangers">
             <a href="#" target="_blank" class="footer__messangers-item">
@@ -1086,9 +1064,9 @@
           </ul>
         </div>
       </div>
-      <p class="footer__copy-mob normal-text">
-        © 2021 СТО «F-Service» в Одессе
-      </p>
+      <div class="footer__copy-mob wp-text">
+        <p>© 2021 СТО «F-Service» в Одессе</p>
+      </div>
     </div>
   </div>
 </footer>
