@@ -284,57 +284,29 @@ textarea {
   top: 4px;
 }
 
+.wp-text ol {
+  counter-reset: my-awesome-counter;
+}
+
 .wp-text ol li {
   padding-left: 35px;
   position: relative;
+  counter-increment: my-awesome-counter;
 }
 
 .wp-text ol li::before {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 0;
-  top: 0;
+  content: counter(my-awesome-counter) ". ";
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   color: #f3a845;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.wp-text ol li:nth-child(1)::before {
-  content: "01.";
-}
-
-.wp-text ol li:nth-child(2)::before {
-  content: "02.";
-}
-
-.wp-text ol li:nth-child(3)::before {
-  content: "03.";
-}
-
-.wp-text ol li:nth-child(4)::before {
-  content: "04.";
-}
-
-.wp-text ol li:nth-child(5)::before {
-  content: "05.";
-}
-
-.wp-text ol li:nth-child(6)::before {
-  content: "06.";
-}
-
-.wp-text ol li:nth-child(7)::before {
-  content: "07.";
-}
-
-.wp-text ol li:nth-child(8)::before {
-  content: "08.";
-}
-
-.wp-text ol li:nth-child(9)::before {
-  content: "09.";
+.wp-text ol li:nth-child(-n+9)::before {
+  content: "0" counter(my-awesome-counter) ". ";
 }
 
 .wp-block-quote {
@@ -1285,6 +1257,10 @@ body.mouse .contact-us__btn:hover .btn-text {
   width: 976px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.contact-home.modal .contact-home__content {
+  padding: 0;
 }
 
 .contact-home__form {

@@ -29,9 +29,6 @@
     justify-content: center;
   }
 
-  &__address-text {
-  }
-
   &__working-hours {
     display: flex;
     align-items: center;
@@ -344,31 +341,16 @@
     margin: 3px 8px 0 0;
   }
 
-  &__address-mob-text {
-  }
-
   &__worktime-mob-icon {
     margin: 3px 7px 0 0;
-  }
-
-  &__worktime-mob-text {
   }
 
   &__telephone-mob-icon {
     margin: 3px 7px 0 0;
   }
 
-  &__telephone-mob-text {
-  }
-
-  &__mail-mob {
-  }
-
   &__mail-mob-icon {
     margin: 3px 6px 0 0;
-  }
-
-  &__mail-mob-text {
   }
 
   &__telephone-icon {
@@ -378,9 +360,6 @@
     svg {
       fill: #fff;
     }
-  }
-
-  &__telephone-number {
   }
 
   &__messangers {

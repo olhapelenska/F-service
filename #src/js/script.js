@@ -149,10 +149,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".accordion-title").click(function (event) {
-    if ($(".accordion-item").hasClass("one")) {
-      $(".accordion-title").not($(this)).removeClass("active");
-      $(".accordion-text").not($(this).next()).slideUp(300);
-    }
     $(this).toggleClass("active").next().slideToggle(300);
   });
 });
@@ -181,6 +177,7 @@ const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
 const modal = document.querySelector(".modal");
+const input = document.querySelector("name-service");
 
 if (modal) {
   openModalButtons.forEach((button) => {
@@ -188,8 +185,11 @@ if (modal) {
       const modal = document.querySelector(button.dataset.modalTarget);
       openModal(modal);
       const isAttribure = button.hasAttribute("data-service-name");
-
       if (isAttribure) {
+        const newValue = button.getAttribute("data-service-name");
+        input.value = newValue;
+        console.log(input.value);
+        console.log(input.id);
       }
     });
   });
@@ -218,5 +218,8 @@ if (modal) {
     if (modal == null) return;
     modal.classList.remove("active");
     overlay.classList.remove("active");
+    input.value = "";
+    console.log(input.value);
+    console.log(input.id);
   }
 }

@@ -10,6 +10,12 @@
     }
   }
 
+  &.modal {
+    .contact-home__content {
+      padding: 0;
+    }
+  }
+
   &__form {
     padding: 30px 60px 40px;
     background: rgba(14, 14, 14, 0.8);

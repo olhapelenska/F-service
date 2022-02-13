@@ -774,7 +774,11 @@
           <a href="#" class="services-item-btn btn">
             <p class="btn-text normal-text">Детали</p>
           </a>
-          <button data-modal-target="#modal-form" class="services-item-btn btn">
+          <button
+            data-modal-target="#modal-form"
+            data-service-name="Text"
+            class="services-item-btn btn"
+          >
             <p class="btn-text normal-text">Заказать</p>
           </button>
         </div>
@@ -1362,6 +1366,13 @@
             name="phone"
             id="phone"
             placeholder="+38(0__)___-__-__"
+          />
+          <input
+            type="hidden"
+            name="name-service"
+            value=""
+            class="wpcf7-form-control wpcf7-hidden"
+            id="name-service"
           />
         </div>
         <div class="contact-home__input-checkbox">

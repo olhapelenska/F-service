@@ -15,9 +15,6 @@
     justify-content: space-between;
   }
 
-  &__logo {
-  }
-
   &__main {
     display: flex;
     flex-direction: column;
@@ -47,9 +44,6 @@
     padding-bottom: 20px;
   }
 
-  &__messangers {
-  }
-
   &__messanger {
     &:not(:last-child) {
       margin-right: 15px;
@@ -60,6 +54,4 @@
       height: 20px;
     }
   }
-}
-.link {
 }

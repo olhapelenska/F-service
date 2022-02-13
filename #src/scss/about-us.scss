@@ -5,9 +5,6 @@
     padding: 80px 0;
   }
 
-  &__items {
-  }
-
   &__item {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     padding: 20px;
@@ -54,9 +51,6 @@
     @media (max-width: 650px) {
       padding-right: 8px;
     }
-  }
-
-  &__item-title {
   }
 
   &__item-text {

@@ -1,10 +1,6 @@
 .contact-us {
   background-repeat: no-repeat;
   background-size: cover;
-  // background-position: center;
-
-  &__container {
-  }
 
   &__content {
     padding: 100px 0 85px;
@@ -12,9 +8,6 @@
     @media (max-width: 650px) {
       padding: 60px 20px 200px;
     }
-  }
-
-  &__form {
   }
 
   &__form-text {
@@ -44,12 +37,6 @@
         margin-bottom: 12px;
       }
     }
-  }
-
-  &__input {
-  }
-
-  &__checkbox {
   }
 
   &__btn {

@@ -282,33 +282,31 @@ textarea {
   }
 
   ol {
+    counter-reset: my-awesome-counter;
+
     li {
       padding-left: 35px;
       position: relative;
+      counter-increment: my-awesome-counter;
 
       @media (max-width: 650px) {
         padding-left: 30px;
       }
 
       &::before {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        left: 0;
-        top: 0;
+        content: counter(my-awesome-counter) ". ";
         font-weight: 600;
         font-size: 18px;
         line-height: 26px;
         color: #f3a845;
+        position: absolute;
+        left: 0;
+        top: 0;
       }
-    }
 
-    @for $i from 1 to 10 {
-      li {
-        &:nth-child(#{$i}) {
-          &::before {
-            content: "0" + $i + ".";
-          }
+      &:nth-child(-n + 9) {
+        &::before {
+          content: "0" counter(my-awesome-counter) ". ";
         }
       }
     }
