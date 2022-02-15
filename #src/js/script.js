@@ -177,7 +177,7 @@ const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
 const modal = document.querySelector(".modal");
-const input = document.querySelector("name-service");
+const input = document.getElementById("name-service");
 
 if (modal) {
   openModalButtons.forEach((button) => {

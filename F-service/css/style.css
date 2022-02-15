@@ -1344,15 +1344,14 @@ body.mouse .contact-us__btn:hover .btn-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .services-item {
-  width: 32%;
+  width: calc(33.33% - 13.33px);
+  margin-right: 20px;
   padding: 80px 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1370,6 +1369,10 @@ body.mouse .contact-us__btn:hover .btn-text {
   margin-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.services-item:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .services-item-text h3 {
@@ -1586,19 +1589,21 @@ body.mouse .services-item-btn:last-child:hover .btn-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
 }
 
 .news-item {
-  width: 32%;
+  width: calc(33.33% - 13.33px);
+  margin-right: 20px;
   display: block;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.news-item:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .news-item:hover .news-item-img::before {
@@ -1819,22 +1824,6 @@ body.mouse .news-item:hover .news-item-img::before {
   margin-bottom: 20px;
 }
 
-.portfolio {
-  padding: 50px 0 120px;
-}
-
-.portfolio__title {
-  padding-bottom: 40px;
-}
-
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio .portfolio-items {
-  margin-bottom: 10px;
-}
-
 .portfolio-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1874,6 +1863,31 @@ body.mouse .news-item:hover .news-item-img::before {
 
 .portfolio-item-text h3 {
   margin: 20px 0 10px;
+}
+
+.portfolio {
+  padding: 50px 0 120px;
+}
+
+.portfolio__title {
+  padding-bottom: 40px;
+}
+
+.portfolio .portfolio-item {
+  width: calc(33.33% - 13.33px);
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-items {
+  margin-bottom: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 body.mouse .portfolio-item:hover .portfolio-item-img::before {
@@ -2166,6 +2180,16 @@ body.mouse .news-page-main__share-messanger:hover svg {
 
 .contacts__side-text {
   width: 26%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.contacts__side-text svg {
+  fill: #0e0e0e;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .contacts__title {
@@ -2193,6 +2217,9 @@ body.mouse .news-page-main__share-messanger:hover svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .contacts__phone-item:not(:last-child) {
@@ -2286,6 +2313,16 @@ body.mouse .news-page-main__share-messanger:hover svg {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+body.mouse .contacts__phone-item:hover,
+body.mouse .contacts__mail-item:hover {
+  color: #f3a845;
+}
+
+body.mouse .contacts__phone-item:hover svg,
+body.mouse .contacts__mail-item:hover svg {
+  fill: #f3a845;
 }
 
 .error-404 {
@@ -2729,7 +2766,12 @@ body.mouse .news-page-main__share-messanger:hover svg {
   }
 
   .services-item {
-    width: 48.7%;
+    width: calc(50% - 10px);
+    margin-right: 0;
+  }
+
+  .services-item:nth-child(odd) {
+    margin-right: 20px;
   }
 
   .why-us__item {
@@ -2743,6 +2785,19 @@ body.mouse .news-page-main__share-messanger:hover svg {
 
   .car-brands__brand-list {
     grid-template-areas: "box1 box2" "box3 box4" "box5 none";
+  }
+
+  .news-item {
+    width: calc(50% - 10px);
+    margin-right: 0;
+  }
+
+  .news-item:nth-child(odd) {
+    margin-right: 20px;
+  }
+
+  .news-item:not(:last-child) {
+    margin-bottom: 25px;
   }
 
   .faq__question {
@@ -2773,6 +2828,15 @@ body.mouse .news-page-main__share-messanger:hover svg {
 
   .portfolio-item {
     width: 48.7%;
+  }
+
+  .portfolio .portfolio-item {
+    width: calc(50% - 10px);
+    margin-right: 0;
+  }
+
+  .portfolio .portfolio-item:nth-child(odd) {
+    margin-right: 20px;
   }
 
   .price-item-top {
@@ -2861,14 +2925,6 @@ body.mouse .news-page-main__share-messanger:hover svg {
   .services-item-text h3 {
     font-size: 18px;
     line-height: 22px;
-  }
-
-  .news-item {
-    width: 48.7%;
-  }
-
-  .news-item:not(:last-child) {
-    margin-bottom: 25px;
   }
 
   .prices__info-text h1 {
@@ -3084,6 +3140,7 @@ body.mouse .news-page-main__share-messanger:hover svg {
 
   .services-item {
     width: 100%;
+    margin-right: 0 !important;
     padding: 55px 10px 10px;
     margin-bottom: 22px;
   }
@@ -3184,6 +3241,7 @@ body.mouse .news-page-main__share-messanger:hover svg {
 
   .news-item {
     width: 100%;
+    margin-right: 0 !important;
   }
 
   .news-item-content {
@@ -3270,6 +3328,14 @@ body.mouse .news-page-main__share-messanger:hover svg {
     margin-bottom: 12px;
   }
 
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-item-text h3 {
+    margin: 15px 0 10px;
+  }
+
   .portfolio {
     padding: 50px 0 80px;
   }
@@ -3278,16 +3344,13 @@ body.mouse .news-page-main__share-messanger:hover svg {
     padding-bottom: 30px;
   }
 
+  .portfolio .portfolio-item {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
   .portfolio .portfolio-items {
     margin-bottom: 0;
-  }
-
-  .portfolio-item {
-    width: 100%;
-  }
-
-  .portfolio-item-text h3 {
-    margin: 15px 0 10px;
   }
 
   .service-plain-text {
@@ -3411,6 +3474,16 @@ body.mouse .news-page-main__share-messanger:hover svg {
   .modal-slider-main .slick-arrow {
     height: 10px;
     width: 27px;
+  }
+
+  .modal-slider-main .slick-arrow.slick-prev {
+    background: url("../img/modal-slider-prev-mob.svg") 0 0 no-repeat;
+    left: 10px;
+  }
+
+  .modal-slider-main .slick-arrow.slick-next {
+    background: url("../img/modal-slider-next-mob.svg") 0 0 no-repeat;
+    right: 10px;
   }
 
   .pagination {

@@ -17,9 +17,15 @@
 
   &__side-text {
     width: 26%;
+    min-width: fit-content;
 
     @media (max-width: 1100px) {
       width: 100%;
+    }
+
+    svg {
+      fill: #0e0e0e;
+      transition: 0.2s;
     }
   }
 
@@ -29,7 +35,6 @@
 
   &__adress-item {
     display: flex;
-    // align-items: center;
   }
 
   &__adress-icon {
@@ -43,6 +48,7 @@
   &__phone-item {
     display: flex;
     align-items: center;
+    transition: 0.2s;
 
     &:not(:last-child) {
       margin-bottom: 2px;
@@ -133,6 +139,21 @@
 
     @media (max-width: 650px) {
       justify-content: center;
+    }
+  }
+}
+
+body {
+  &.mouse {
+    .contacts__phone-item,
+    .contacts__mail-item {
+      &:hover {
+        color: #f3a845;
+
+        svg {
+          fill: #f3a845;
+        }
+      }
     }
   }
 }

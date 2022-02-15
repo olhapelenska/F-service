@@ -42,11 +42,21 @@
   .slick-arrow.slick-prev {
     background: url("../img/modal-slider-prev.svg") 0 0 no-repeat;
     left: 30px;
+
+    @media (max-width: 650px) {
+      background: url("../img/modal-slider-prev-mob.svg") 0 0 no-repeat;
+      left: 10px;
+    }
   }
 
   .slick-arrow.slick-next {
     background: url("../img/modal-slider-next.svg") 0 0 no-repeat;
     right: 30px;
+
+    @media (max-width: 650px) {
+      background: url("../img/modal-slider-next-mob.svg") 0 0 no-repeat;
+      right: 10px;
+    }
   }
 }
 
