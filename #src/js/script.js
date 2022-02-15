@@ -148,8 +148,13 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".accordion-title").click(function (event) {
-    $(this).toggleClass("active").next().slideToggle(300);
+  $(".accordion-title ").click(function (e) {
+    e.preventDefault();
+    if (!$(e.target).is(".price-item-btn")) {
+      if (!$(e.target).is(".price-item-btn .btn-text")) {
+        $(this).toggleClass("active").next().slideToggle(300);
+      }
+    }
   });
 });
 
@@ -188,8 +193,6 @@ if (modal) {
       if (isAttribure) {
         const newValue = button.getAttribute("data-service-name");
         input.value = newValue;
-        console.log(input.value);
-        console.log(input.id);
       }
     });
   });
@@ -219,7 +222,5 @@ if (modal) {
     modal.classList.remove("active");
     overlay.classList.remove("active");
     input.value = "";
-    console.log(input.value);
-    console.log(input.id);
   }
 }

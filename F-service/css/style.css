@@ -1182,6 +1182,7 @@ body.mouse .footer__messangers-item:hover svg {
 }
 
 .contact-us {
+  background-image: url("../img/contact-us-bcg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -3096,6 +3097,10 @@ body.mouse .contacts__mail-item:hover svg {
     width: 100%;
     max-width: 100%;
     margin-top: 30px;
+  }
+
+  .contact-us {
+    background-image: url("../img/contact-us-bg-mob.jpg");
   }
 
   .contact-us__content {

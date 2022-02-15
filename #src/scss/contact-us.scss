@@ -1,6 +1,11 @@
 .contact-us {
+  background-image: url("../img/contact-us-bcg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 650px) {
+    background-image: url("../img/contact-us-bg-mob.jpg");
+  }
 
   &__content {
     padding: 100px 0 85px;
