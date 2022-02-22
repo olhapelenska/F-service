@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('_head.html',{ "title":"F-service", })
+  @@include('_head.html',{ "title":"Crossway Logistics Inc", })
   <body>
     <div class="wrapper">
       @@include('_header.html')
       <main class="page">
-        @@include('_banner-home.html') @@include('_contact-home.html')
-        @@include('_services-home.html') @@include('_home-title-and-text.html')
-        @@include('_contact-us.html') @@include('_home-plain-text.html')
-        @@include('_why-us.html') @@include('_car-brands.html')
-        @@include('_faq.html') @@include('_news-home.html')
-        @@include('_map.html') @@include('_modal-form.html')
-        @@include('_modal-thanks.html')
+        @@include('_banner.html') @@include('_slider.html')
+        @@include('_facts.html') @@include('_our-services.html')
+        @@include('_why-us.html') @@include('_get-in-touch.html')
+        @@include('_about-us.html') @@include('_play-video.html')
+        @@include('_for.html') @@include('_partners.html')
+        @@include('_news-home.html') @@include('_modal-thanks.html')
       </main>
       @@include('_footer.html')
     </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/script.min.js"></script>
-    <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKxjvTCBgHlQmhi7vo4ywPbkyJQh6B59M&callback=initMap"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   </body>
 </html>

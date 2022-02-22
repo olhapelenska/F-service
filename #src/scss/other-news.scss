@@ -1,0 +1,14 @@
+.other-news {
+  padding-bottom: 150px;
+
+  @media (max-width: 650) {
+    padding-bottom: 80px;
+  }
+  &__title {
+    margin-bottom: 40px;
+
+    @media (max-width: 650) {
+      margin-bottom: 30px;
+    }
+  }
+}

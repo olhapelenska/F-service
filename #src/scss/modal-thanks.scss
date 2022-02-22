@@ -1,39 +1,35 @@
 .modal-thanks {
-  background: #0e0e0e;
-  border: 1px solid rgba(226, 226, 226, 0.6);
-  width: 976px;
+  width: 830px;
+  background: #82c3ff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
 
   &__content {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 55px 25px;
 
-    @media (max-width: 650px) {
-      padding: 60px 20px;
+    h3 {
+      margin: 5px 0 10px;
     }
-  }
 
-  &__title {
-    color: #fff;
-    padding-bottom: 10px;
-    text-align: center;
-
-    @media (max-width: 650px) {
-      padding-bottom: 5px;
+    p {
+      font-weight: 500;
       font-size: 18px;
       line-height: 22px;
+      color: #e4e4e4;
+
+      @media (max-width: 650px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
     }
   }
 
-  &__paragraph {
-    color: #f3a845;
-    font-weight: 600;
-    text-align: center;
+  &__logo {
+    width: 38px;
 
     @media (max-width: 650px) {
-      font-size: 14px;
-      line-height: 22px;
+      width: 31px;
     }
   }
 }

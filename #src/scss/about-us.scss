@@ -1,100 +1,59 @@
 .about-us {
-  padding: 120px 0;
+  padding: 150px 0;
 
   @media (max-width: 650px) {
-    padding: 80px 0;
+    padding: 80px 0 60px;
   }
 
-  &__item {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    padding: 20px;
+  &__content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-
-    &:not(:last-child) {
-      margin-bottom: 12px;
-    }
 
     @media (max-width: 1100px) {
       flex-direction: column;
-      padding: 15px;
     }
   }
 
-  &__item-title-wrapper {
+  &__info {
+    width: 46%;
     display: flex;
-    align-items: center;
-    width: 29.5%;
+    flex-direction: column;
 
     @media (max-width: 1100px) {
       width: 100%;
-      padding-bottom: 15px;
+      margin-bottom: 30px;
     }
-  }
-
-  &__item-title-icon {
-    display: flex;
-    justify-content: center;
-    svg {
-      width: 40px;
-      height: 40px;
-
-      @media (max-width: 650px) {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    padding-right: 20px;
 
     @media (max-width: 650px) {
-      padding-right: 8px;
+      margin-bottom: 15px;
     }
   }
 
-  &__item-text {
-    width: 66.6%;
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    width: 90px;
+
+    @media (max-width: 650px) {
+      width: 65px;
+    }
+  }
+
+  &__citation {
+    margin-top: auto;
+
+    @media (max-width: 1100px) {
+      margin-top: 50px;
+    }
+  }
+
+  &__text {
+    width: 49%;
 
     @media (max-width: 1100px) {
       width: 100%;
-    }
-
-    &.wp-text {
-      ul {
-        margin: 0;
-        display: flex;
-        padding-top: 10px;
-
-        @media (max-width: 650px) {
-          flex-direction: column;
-          padding-top: 0;
-        }
-
-        li {
-          margin: 0;
-          width: 48.7%;
-          &:first-child {
-            padding-right: 20px;
-          }
-
-          @media (max-width: 650px) {
-            width: 100%;
-            flex-direction: column;
-            padding-top: 25px;
-            padding-left: 0;
-
-            &:first-child {
-              padding-bottom: 15px;
-              padding-right: 0;
-            }
-
-            &::before {
-              top: 0;
-            }
-          }
-        }
-      }
     }
   }
 }

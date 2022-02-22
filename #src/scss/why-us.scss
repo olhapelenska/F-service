@@ -1,86 +1,67 @@
 .why-us {
-  &__text {
-    padding-bottom: 40px;
+  padding: 130px 0;
+  background: #353535;
+  color: #fff;
+
+  @media (max-width: 650px) {
+    padding: 80px 0;
+  }
+
+  &__content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
-    @media (max-width: 650px) {
-      padding-bottom: 15px;
+    @media (max-width: 1100px) {
       flex-direction: column;
     }
+  }
 
-    h2 {
-      width: 39%;
-
-      @media (max-width: 650px) {
-        width: 100%;
-        padding-bottom: 15px;
-      }
+  &__title {
+    width: 357px;
+    @media (max-width: 1100px) {
+      width: 100%;
+      padding-bottom: 60px;
     }
 
-    p {
-      width: 49%;
-
-      @media (max-width: 650px) {
-        width: 100%;
-      }
+    @media (max-width: 650px) {
+      padding-bottom: 30px;
     }
   }
 
   &__items {
-    display: flex;
-    color: #fff;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 90px;
+    row-gap: 60px;
+    width: 520px;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr;
+      border-top: none;
+      border-bottom: none;
+      row-gap: 30px;
+    }
   }
 
   &__item {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25%;
-    padding: 50px 25px 20px;
-    display: flex;
-    flex-direction: column;
-
-    @media (max-width: 1100px) {
-      width: 50%;
-      padding: 50px 15px 30px;
+    h4 {
+      margin: 10px 0;
     }
 
-    @media (max-width: 650px) {
-      width: 100%;
+    p {
+      color: #cfcfcf;
     }
   }
 
-  &__item-icon {
-    align-self: center;
-    width: 154px;
-    height: 154px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(243, 168, 69, 0.7);
-    border-radius: 50%;
-
-    @media (max-width: 650px) {
-      width: 110px;
-      height: 110px;
-    }
-
-    svg {
-      width: 68px;
-      height: 68px;
-
-      @media (max-width: 650px) {
-        width: 49px;
-        height: 49px;
-      }
-    }
+  &__icon {
   }
-
-  &__item-text {
-    h3 {
-      margin: 32px 0 10px;
-    }
-  }
+}
+.container {
+}
+.wp-text {
 }

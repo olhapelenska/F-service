@@ -1,0 +1,107 @@
+.get-in-touch {
+  background: url("../img/get-in-touch-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 86px 0;
+  color: #fff;
+
+  @media (max-width: 650px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 425px) {
+    background: url("../img/get-in-touch-mob-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__form {
+    width: 930px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      @media (max-width: 650px) {
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #e4e4e4;
+      margin-bottom: 40px;
+
+      @media (max-width: 650px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  &__form-elements {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 650px) {
+      justify-content: center;
+    }
+  }
+
+  &__form-input {
+    width: calc(26.8% - 20px);
+    margin-right: 20px;
+
+    .form-input {
+      color: #e4e4e4;
+
+      &::placeholder {
+        color: #e4e4e4;
+      }
+    }
+
+    @media (max-width: 850px) {
+      width: 48%;
+      margin-right: 0;
+
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
+      margin-bottom: 12px;
+
+      &:first-child {
+        margin-bottom: 12px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 25px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      max-width: 230px;
+    }
+  }
+
+  &__form-button {
+    width: 19.3%;
+
+    @media (max-width: 850px) {
+      width: 48%;
+    }
+
+    @media (max-width: 650px) {
+      width: 180px;
+    }
+  }
+}

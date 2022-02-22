@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('_head.html',{ "title":"F-service", })
+  @@include('_head.html',{ "title":"Crossway Logistics Inc", })
   <body>
     <div class="wrapper">
       @@include('_header.html')
       <main class="page">
-        @@include('_banner-news-page.html') @@include('_news-page-main.html')
-        @@include('_news-news-page.html')
+        @@include('_news-article.html') @@include('_other-news.html')
+        @@include('_modal-thanks.html')
       </main>
       @@include('_footer.html')
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/script.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   </body>
 </html>

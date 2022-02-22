@@ -13,6 +13,7 @@ body {
 body {
   font-family: $fontFamily;
   color: #0e0e0e;
+  background: #eff5fe;
 
   &._lock {
     overflow: hidden;
@@ -62,6 +63,7 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+  font-family: "Raleway";
 }
 
 button {
@@ -89,59 +91,11 @@ textarea {
 }
 
 .container {
-  width: 86%;
+  width: 82.6%;
   margin: 0 auto;
 
   @media (max-width: 650px) {
     width: 87.5%;
-  }
-}
-
-#map {
-  height: 400px;
-}
-
-.title-h1 {
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 70px;
-
-  @media (max-width: 650px) {
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
-
-.title-h2 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 56px;
-
-  @media (max-width: 650px) {
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
-
-.title-h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-
-  @media (max-width: 650px) {
-    font-size: 18px;
-    line-height: 22px;
-  }
-}
-
-.title-h4 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-
-  @media (max-width: 650px) {
-    font-size: 14px;
-    line-height: 22px;
   }
 }
 
@@ -151,6 +105,7 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+  color: #7a7a7a;
 }
 
 .wp-text {
@@ -161,7 +116,7 @@ textarea {
   h4,
   h5,
   h6 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
     &:last-child {
       margin-bottom: 0;
@@ -173,55 +128,60 @@ textarea {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
+    color: #7a7a7a;
   }
 
   h1 {
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 70px;
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 90px;
 
     @media (max-width: 650px) {
-      font-size: 24px;
-      line-height: 29px;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 42px;
     }
   }
 
   h2 {
     font-weight: 600;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 64px;
+    line-height: 68px;
 
     @media (max-width: 650px) {
-      font-size: 24px;
-      line-height: 29px;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 42px;
     }
   }
 
   h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
 
     @media (max-width: 650px) {
-      font-size: 18px;
-      line-height: 22px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
     }
   }
 
   h4 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 
     @media (max-width: 650px) {
-      font-size: 14px;
-      line-height: 22px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
     }
   }
 
   h5 {
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 22px;
 
     @media (max-width: 650px) {
@@ -243,41 +203,11 @@ textarea {
 
   ul,
   ol {
-    margin: 60px 0;
-
-    @media (max-width: 650px) {
-      margin: 50px 0;
-    }
-
     li {
       font-weight: 400;
       font-size: 14px;
       line-height: 22px;
-      margin-bottom: 20px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  ul {
-    li {
-      padding-left: 35px;
-      position: relative;
-
-      @media (max-width: 650px) {
-        padding-left: 30px;
-      }
-
-      &::before {
-        position: absolute;
-        content: url("../img/tick.svg");
-        width: 20px;
-        height: 20px;
-        left: 0;
-        top: 4px;
-      }
+      color: #7a7a7a;
     }
   }
 
@@ -285,73 +215,40 @@ textarea {
     counter-reset: my-awesome-counter;
 
     li {
-      padding-left: 35px;
+      padding-left: 22px;
       position: relative;
       counter-increment: my-awesome-counter;
 
-      @media (max-width: 650px) {
-        padding-left: 30px;
-      }
-
       &::before {
         content: counter(my-awesome-counter) ". ";
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 26px;
-        color: #f3a845;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #7a7a7a;
         position: absolute;
         left: 0;
         top: 0;
-      }
-
-      &:nth-child(-n + 9) {
-        &::before {
-          content: "0" counter(my-awesome-counter) ". ";
-        }
+        transform: translateX(50%);
       }
     }
   }
 }
 
 .wp-block-quote {
-  margin: 60px 0;
-  padding: 30px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (max-width: 650px) {
-    margin: 50px 0;
-    padding: 30px 15px;
-  }
-
   cite {
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    font-style: normal;
-    padding-top: 42px;
-    position: relative;
+    font-family: "Raleway";
+    font-size: 36px;
+    line-height: 45px;
     margin-bottom: 15px;
+    font-style: normal;
 
     &:last-child {
       margin-bottom: 0;
     }
 
     @media (max-width: 650px) {
-      font-size: 14px;
-      line-height: 22px;
-    }
-
-    &::before {
-      width: 24px;
-      height: 27px;
-      position: absolute;
-      content: url(../img/cite.svg);
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      font-size: 22px;
+      line-height: 26px;
     }
   }
 }
@@ -387,146 +284,147 @@ textarea {
 }
 
 .link {
+  font-family: "Raleway";
   font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 30px;
   text-decoration-line: underline;
-  color: #f3a845;
+  color: #82c3ff;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 38px;
+    background: #82c3ff;
+    border-radius: 50%;
+    filter: blur(20px);
+    top: -2px;
+    right: -9px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: 650) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 176px;
-  padding: 8px 0;
-  background: #f3a845;
-  border-radius: 5px;
-  border: 1px solid #f3a845;
+  width: 180px;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: 1px solid #0e0e0e;
   transition: 0.2s;
   cursor: pointer;
 
   .btn-text {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
   }
-}
 
-body {
-  &.mouse {
-    .btn {
-      &:hover {
-        background: transparent;
+  .btn-icon {
+    margin-left: 8px;
+    margin-top: 1px;
+    position: relative;
+    z-index: 1;
+    display: flex;
 
-        .btn-text {
-          color: #fff;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 38px;
+      background: #82c3ff;
+      border-radius: 50%;
+      filter: blur(20px);
+      top: -14px;
+      left: -13px;
+      transition: 0.2s;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+      fill: #0e0e0e;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background: #82c3ff;
+      .btn-icon {
+        &::before {
+          background: #fff;
         }
       }
     }
   }
 }
 
-.form-elements {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
 .form-input,
 .form-textarea {
-  padding: 8px 15px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 20px 11px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #ffffff;
   width: 100%;
+  box-sizing: border-box;
 
   @media (max-width: 1000px) {
   }
 }
 
-.checkbox {
-  display: none;
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  padding: 8px 0 11px;
+  border-radius: 20px;
+  background: #82c3ff;
+  transition: 0.2s;
+  cursor: pointer;
 
-  &:checked + {
-    .checkbox-text {
-      &::after {
-        opacity: 1;
-      }
+  .btn-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .btn-icon {
+    margin-left: 8px;
+    margin-top: 2px;
+
+    svg {
+      fill: #0e0e0e;
+      width: 12px;
+      height: 12px;
     }
   }
-}
 
-.checkbox-text {
-  font-size: 10px;
-  line-height: 12px;
-  position: relative;
-  padding-left: 20px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 15px;
-    height: 15px;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    top: 0;
-    left: 0;
+  @media (hover: hover) {
+    &:hover {
+      background: #ffffff;
+    }
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 11px;
-    height: 8px;
-    top: 3.5px;
-    left: 2px;
-    opacity: 0;
-    transition: 0.2s;
-  }
-}
-
-.error {
-  color: red;
-  padding-top: 3px;
-  width: 179px;
-
-  @media (max-width: 1000px) {
-    width: 100%;
-  }
-}
-
-.alert {
-  padding: 20px;
-  color: white;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.4s ease-in-out;
-  border-radius: 4px;
-  z-index: 9999;
-  display: none;
-}
-
-.alert-success {
-  background-color: #4db886;
-}
-
-.alert-danger {
-  background-color: #f44336;
-}
-
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .modal {
@@ -543,10 +441,10 @@ body {
     max-width: 87.5vw;
   }
 
-  &__close-btn {
+  .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 23px;
+    right: 23px;
     cursor: pointer;
     z-index: 2;
   }

@@ -1,0 +1,147 @@
+.slider {
+  background: #353535;
+  display: flex;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+
+  &__slick {
+    width: 63.3%;
+
+    @media (max-width: 1260px) {
+      width: 60%;
+    }
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+  }
+
+  &__slide {
+  }
+
+  &__contacts {
+    width: 36.7%;
+    padding-left: 65px;
+    padding-top: 75px;
+    font-weight: 500;
+    padding-right: 8.6%;
+    font-size: 14px;
+    line-height: 17px;
+    color: #cfcfcf;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1260px) {
+      padding-left: 35px;
+      padding-top: 45px;
+      width: 40%;
+    }
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      padding-left: 8.6%;
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
+      padding: 15px 6.2%;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__dots {
+    margin-bottom: 30px;
+    margin-top: auto;
+
+    @media (max-width: 1100px) {
+      margin-top: 20px;
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 650px) {
+    margin-bottom: 0;
+  }
+
+  .slick-dots {
+    display: flex;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .slick-dots li button {
+    font-size: 0;
+    height: 2px;
+    width: 30px;
+    background: #cfcfcf;
+    cursor: pointer;
+
+    @media (max-width: 650px) {
+      width: 15px;
+      height: 1px;
+    }
+  }
+  .slick-dots li.slick-active button {
+    background: #82c3ff;
+  }
+}
+
+.contact-item {
+  display: flex;
+  transition: 0.2s;
+
+  svg {
+    fill: #fff;
+    transition: 0.2s;
+  }
+
+  @media (hover: hover) {
+    &:not(:last-child) {
+      &:hover {
+        color: #82c3ff;
+
+        svg {
+          fill: #82c3ff;
+        }
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &.phone {
+    .contact-icon {
+      margin: 2px 9px 0 1px;
+    }
+  }
+
+  &.mail {
+    .contact-icon {
+      margin: 3px 8px 0 0;
+    }
+  }
+
+  &.address {
+    .contact-icon {
+      margin: 1px 10px 0 3px;
+    }
+  }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}

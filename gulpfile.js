@@ -57,6 +57,7 @@ function browserSync(params) {
     notify: false,
   });
 }
+
 function html() {
   return (
     src(path.src.html)
@@ -66,6 +67,7 @@ function html() {
       .pipe(browsersync.stream())
   );
 }
+
 function css() {
   return (
     src(path.src.css)
@@ -94,6 +96,7 @@ function css() {
       .pipe(browsersync.stream())
   );
 }
+
 function js() {
   return src(path.src.js)
     .pipe(fileinclude())
@@ -111,6 +114,7 @@ function js() {
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream());
 }
+
 function images() {
   return (
     src(path.src.img)
@@ -141,10 +145,12 @@ function images() {
       .pipe(dest(path.build.img))
   );
 }
+
 function fonts() {
   src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
   return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
 }
+
 function fonts_otf() {
   return src("./" + source_folder + "/fonts/*.otf")
     .pipe(
@@ -154,6 +160,7 @@ function fonts_otf() {
     )
     .pipe(gulp.dest("./" + source_folder + "/fonts/"));
 }
+
 gulp.task("svgSprite", function () {
   return gulp
     .src([source_folder + "/iconsprite/*.svg"])
@@ -169,6 +176,7 @@ gulp.task("svgSprite", function () {
     )
     .pipe(dest(path.build.img));
 });
+
 function fontstyle() {
   let file_content = fs.readFileSync(source_folder + "/scss/fonts.scss");
   if (file_content == "") {
@@ -197,16 +205,20 @@ function fontstyle() {
   }
   return src(path.src.html).pipe(browsersync.stream());
 }
+
 function cb() {}
+
 function watchFiles(params) {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.img], images);
 }
+
 function clean(params) {
   return del(path.clean);
 }
+
 let fontsBuild = gulp.series(fonts_otf, fonts, fontstyle);
 let buildDev = gulp.series(
   clean,
